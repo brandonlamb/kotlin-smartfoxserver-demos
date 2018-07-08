@@ -1,7 +1,7 @@
 package com.example.extensions
 
 import com.example.auth.domain.api.AuthRepository
-import com.example.infra.basic.AuthRepo
+import com.example.infra.basic.BasicAuthRepository
 import com.smartfoxserver.v2.annotations.Instantiation
 import com.smartfoxserver.v2.annotations.Instantiation.InstantiationMode.SINGLE_INSTANCE
 import com.smartfoxserver.v2.core.SFSEventParam.LOGIN_NAME
@@ -23,7 +23,7 @@ class ZoneExtension : SFSExtension() {
     try {
       cdi = SeContainerInitializer
         .newInstance()
-        .addBeanClasses(AuthRepo::class.java)
+        .addBeanClasses(BasicAuthRepository::class.java)
         .initialize()
 
       authRepo = cdi.beanManager.createInstance().select(AuthRepository::class.java).get()
