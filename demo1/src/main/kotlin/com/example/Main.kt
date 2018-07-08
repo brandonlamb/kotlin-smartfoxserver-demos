@@ -1,4 +1,13 @@
 package com.example
 
-class Main {
+object Main {
+  init {
+    println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
+    println("Initializing game extension")
+    println("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
+  }
+
+  @JvmStatic
+  fun main(args: Array<String>) {
+  }
 }

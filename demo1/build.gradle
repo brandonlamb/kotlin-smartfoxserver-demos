@@ -1,0 +1,75 @@
+buildscript {
+  ext.kotlin_version = "1.2.31"
+
+  repositories {
+    mavenCentral()
+    maven { url "https://plugins.gradle.org/m2/" }
+  }
+
+  dependencies {
+    classpath "com.github.jengelman.gradle.plugins:shadow:2.0.4"
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+  }
+}
+
+group "com.example"
+version "1.0-SNAPSHOT"
+
+apply plugin: "kotlin"
+apply plugin: "com.github.johnrengelman.shadow"
+
+repositories {
+  mavenLocal()
+  mavenCentral()
+  maven { url "https://jcenter.bintray.com" }
+}
+
+dependencies {
+  compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+  compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+
+//  compile 'org.apache.openwebbeans:openwebbeans-se:2.0.6'
+//  compile 'org.apache.openwebbeans:openwebbeans-impl:2.0.6'
+//  compile 'org.apache.openwebbeans:openwebbeans-spi:2.0.6'
+
+  compile 'javax.enterprise:cdi-api:2.0'
+  compile "org.jboss.weld.se:weld-se-shaded:3.0.4.Final"
+//  compile 'org.apache.geronimo.specs:geronimo-jcdi_2.0_spec:1.0.1'
+//  compile 'org.apache.geronimo.specs:geronimo-atinject_1.0_spec:1.0'
+//  compile 'org.apache.geronimo.specs:geronimo-interceptor_1.2_spec:1.0'
+//  compile 'org.apache.geronimo.specs:geronimo-annotation_1.3_spec:1.0'
+
+//  compile ("com.google.inject:guice:4.2.0") {
+//    exclude group: 'com.google.guava'
+//  }
+//  compile ("com.google.inject.extensions:guice-multibindings:4.2.0") {
+//    exclude group: 'com.google.guava'
+//  }
+//  compile "com.google.inject:guice:4.2.0"
+//  compile "com.google.inject.extensions:guice-multibindings:4.2.0"
+//  compile 'com.google.guava:guava:25.1-jre'
+
+  compileOnly files("src/lib/sfs2x.jar", "src/lib/sfs2x-core.jar")
+}
+
+//configurations {
+//  all*.exclude group: 'com.google.guava', module:'guava'
+//}
+
+compileKotlin {
+  kotlinOptions {
+    jvmTarget = "1.8"
+    javaParameters = true
+  }
+}
+
+compileTestKotlin {
+  kotlinOptions {
+    jvmTarget = "1.8"
+    javaParameters = true
+  }
+}
+
+shadowJar {
+  mergeServiceFiles()
+}
