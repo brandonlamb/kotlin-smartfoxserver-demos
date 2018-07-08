@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Demo1/SmartFoxServer.cs" type="Script" id=1]
+
+[node name="game" type="Node" index="0"]
+
+[node name="SmartFoxServer" type="Node2D" parent="." index="0"]
+script = ExtResource( 1 )
+
