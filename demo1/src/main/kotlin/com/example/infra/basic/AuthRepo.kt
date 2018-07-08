@@ -8,7 +8,7 @@ import com.smartfoxserver.v2.exceptions.SFSLoginException
 import javax.inject.Singleton
 
 @Singleton
-open class AuthRepo : AuthRepository {
+class AuthRepo : AuthRepository {
   override fun authenticate(username: String, password: String): Boolean {
     // User does not exist, throw exception
     if (!db.containsKey(username)) {
