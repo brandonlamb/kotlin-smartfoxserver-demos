@@ -2322,16 +2322,6 @@
             <summary>
             </summary>
         </member>
-        <member name="M:Godot.Mathf.PosMod(System.Single,System.Single)">
-            <summary>
-            Performs a canonical Modulus operation, where the output is on the range [0, b).
-            </summary>
-        </member>
-        <member name="M:Godot.Mathf.PosMod(System.Int32,System.Int32)">
-            <summary>
-            Performs a canonical Modulus operation, where the output is on the range [0, b).
-            </summary>
-        </member>
         <member name="M:Godot.StringExtensions.Length(System.String)">
             <summary>
             Return the length of the string in characters.
@@ -2396,10 +2386,6 @@
         <member name="P:Godot.AnimatedSprite.Frame">
             <summary>
             The displayed animation frame's index.
-            </summary>
-        </member>
-        <member name="P:Godot.AnimatedSprite.SpeedScale">
-            <summary>
             </summary>
         </member>
         <member name="P:Godot.AnimatedSprite.Playing">
@@ -2548,10 +2534,6 @@
             Move a track down.
             </summary>
         </member>
-        <member name="M:Godot.Animation.TrackSwap(System.Int32,System.Int32)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.Animation.TrackSetImported(System.Int32,System.Boolean)">
             <summary>
             Set the given track as imported or not.
@@ -2680,80 +2662,6 @@
         <member name="M:Godot.Animation.MethodTrackGetParams(System.Int32,System.Int32)">
             <summary>
             Return the arguments values to be called on a method track for a given key in a given track.
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.BezierTrackInsertKey(System.Int32,System.Single,System.Single,System.Nullable{Godot.Vector2},System.Nullable{Godot.Vector2})">
-            <summary>
-            &lt;param name="inHandle"&gt;If the param is null, then the default value is new Vector2(0, 0)&lt;/param&gt;
-            &lt;param name="outHandle"&gt;If the param is null, then the default value is new Vector2(0, 0)&lt;/param&gt;
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.BezierTrackSetKeyValue(System.Int32,System.Int32,System.Single)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.BezierTrackSetKeyInHandle(System.Int32,System.Int32,Godot.Vector2)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.BezierTrackSetKeyOutHandle(System.Int32,System.Int32,Godot.Vector2)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.BezierTrackGetKeyValue(System.Int32,System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.BezierTrackGetKeyInHandle(System.Int32,System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.BezierTrackGetKeyOutHandle(System.Int32,System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.BezierTrackInterpolate(System.Int32,System.Single)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AudioTrackInsertKey(System.Int32,System.Single,Godot.Resource,System.Single,System.Single)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AudioTrackSetKeyStream(System.Int32,System.Int32,Godot.Resource)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AudioTrackSetKeyStartOffset(System.Int32,System.Int32,System.Single)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AudioTrackSetKeyEndOffset(System.Int32,System.Int32,System.Single)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AudioTrackGetKeyStream(System.Int32,System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AudioTrackGetKeyStartOffset(System.Int32,System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AudioTrackGetKeyEndOffset(System.Int32,System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AnimationTrackInsertKey(System.Int32,System.Single,System.String)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AnimationTrackSetKeyAnimation(System.Int32,System.Int32,System.String)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Animation.AnimationTrackGetKeyAnimation(System.Int32,System.Int32)">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.Animation.Clear">
@@ -2901,11 +2809,6 @@
             Clears all queued, unplayed animations.
             </summary>
         </member>
-        <member name="M:Godot.AnimationPlayer.GetPlayingSpeed">
-            <summary>
-            Get the actual playing speed of current animation or 0 if not playing. This speed is the [code]playback_speed[/code] property multiplied by [code]custom_speed[/code] argument specified when calling the [code]play[/code] method.
-            </summary>
-        </member>
         <member name="M:Godot.AnimationPlayer.FindAnimation(Godot.Animation)">
             <summary>
             Returns the name of [code]animation[/code] or empty string if not found.
@@ -3002,10 +2905,6 @@
         <member name="M:Godot.AnimationTreePlayer.AnimationNodeGetMasterAnimation(System.String)">
             <summary>
             Returns the name of the [member master_player]'s [Animation] bound to this animation node.
-            </summary>
-        </member>
-        <member name="M:Godot.AnimationTreePlayer.AnimationNodeGetPosition(System.String)">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.AnimationTreePlayer.AnimationNodeSetFilterPath(System.String,Godot.NodePath,System.Boolean)">
@@ -3844,10 +3743,6 @@
             Allows you to adjust the scale to your game's units. Most AR/VR platforms assume a scale of 1 game world unit = 1 meter in the real world.
             </summary>
         </member>
-        <member name="P:Godot.ARVRServer.PrimaryInterface">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.ARVRServer.GetReferenceFrame">
             <summary>
             Gets our reference frame transform, mostly used internally and exposed for GDNative build interfaces.
@@ -3865,7 +3760,6 @@
         </member>
         <member name="M:Godot.ARVRServer.GetHmdTransform">
             <summary>
-            Returns the primary interface's transformation.
             </summary>
         </member>
         <member name="M:Godot.ARVRServer.GetInterfaceCount">
@@ -3896,6 +3790,15 @@
         <member name="M:Godot.ARVRServer.GetTracker(System.Int32)">
             <summary>
             Get the positional tracker at the given ID.
+            </summary>
+        </member>
+        <member name="M:Godot.ARVRServer.GetPrimaryInterface">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Godot.ARVRServer.SetPrimaryInterface(Godot.ARVRInterface)">
+            <summary>
+            Changes the primary interface to the specified interface. Again mostly exposed for GDNative interfaces.
             </summary>
         </member>
         <member name="M:Godot.ARVRServer.GetLastProcessUsec">
@@ -4844,11 +4747,6 @@
             OGG Vorbis audio stream driver.
             </summary>
         </member>
-        <member name="P:Godot.AudioStreamOGGVorbis.Data">
-            <summary>
-            Contains the audio data in bytes.
-            </summary>
-        </member>
         <member name="P:Godot.AudioStreamOGGVorbis.Loop">
             <summary>
             </summary>
@@ -4879,7 +4777,6 @@
         </member>
         <member name="P:Godot.AudioStreamPlayer.PitchScale">
             <summary>
-            Changes the pitch and the tempo of the audio.
             </summary>
         </member>
         <member name="P:Godot.AudioStreamPlayer.Playing">
@@ -4939,7 +4836,6 @@
         </member>
         <member name="P:Godot.AudioStreamPlayer2D.PitchScale">
             <summary>
-            Changes the pitch and the tempo of the audio.
             </summary>
         </member>
         <member name="P:Godot.AudioStreamPlayer2D.Playing">
@@ -5024,7 +4920,6 @@
         </member>
         <member name="P:Godot.AudioStreamPlayer3D.PitchScale">
             <summary>
-            Changes the pitch and the tempo of the audio.
             </summary>
         </member>
         <member name="P:Godot.AudioStreamPlayer3D.Playing">
@@ -5125,11 +5020,6 @@
         <member name="T:Godot.AudioStreamSample">
             <summary>
             Plays audio, can loop.
-            </summary>
-        </member>
-        <member name="P:Godot.AudioStreamSample.Data">
-            <summary>
-            Contains the audio data in bytes.
             </summary>
         </member>
         <member name="P:Godot.AudioStreamSample.Format">
@@ -5290,12 +5180,6 @@
             Determines when the button is considered clicked, one of the ACTION_MODE_* constants.
             </summary>
         </member>
-        <member name="P:Godot.BaseButton.ButtonMask">
-            <summary>
-            Binary mask to choose which mouse buttons this button will respond to.
-            To allow both left-click and right-click, set this to 3, because it's BUTTON_MASK_LEFT | BUTTON_MASK_RIGHT.
-            </summary>
-        </member>
         <member name="P:Godot.BaseButton.EnabledFocusMode">
             <summary>
             Focus access mode to use when switching between enabled/disabled (see [method Control.set_focus_mode] and [member disabled]).
@@ -5313,17 +5197,17 @@
         </member>
         <member name="M:Godot.BaseButton._Pressed">
             <summary>
-            Called when the button is pressed.
+            Called when button is pressed.
             </summary>
         </member>
         <member name="M:Godot.BaseButton._Toggled(System.Boolean)">
             <summary>
-            Called when the button is toggled (only if toggle_mode is active).
+            Called when button is toggled (only if toggle_mode is active).
             </summary>
         </member>
         <member name="M:Godot.BaseButton.IsHovered">
             <summary>
-            Return true if the mouse has entered the button and has not left it yet.
+            Return true if mouse entered the button before it exit.
             </summary>
         </member>
         <member name="M:Godot.BaseButton.GetDrawMode">
@@ -5341,9 +5225,9 @@
             Creates a bitmap with the specified size, filled with false.
             </summary>
         </member>
-        <member name="M:Godot.BitMap.CreateFromImageAlpha(Godot.Image,System.Single)">
+        <member name="M:Godot.BitMap.CreateFromImageAlpha(Godot.Image)">
             <summary>
-            Creates a bitmap that matches the given image dimensions, every element of the bitmap is set to false if the alpha value of the image at that position is equal to [code]threshold[/code] or less, and true in other case.
+            Creates a bitmap that matches the given image dimensions, every element of the bitmap is set to false if the alpha value of the image at that position is 0, and true in other case.
             </summary>
         </member>
         <member name="M:Godot.BitMap.SetBit(Godot.Vector2,System.Boolean)">
@@ -5442,26 +5326,6 @@
             Clears all the font data and settings.
             </summary>
         </member>
-        <member name="P:Godot.Bone2D.Rest">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.Bone2D.DefaultLength">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Bone2D.ApplyRest">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Bone2D.GetSkeletonRest">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Bone2D.GetIndexInSkeleton">
-            <summary>
-            </summary>
-        </member>
         <member name="T:Godot.BoneAttachment">
             <summary>
             This node must be the child of a [Skeleton] node. You can then select a bone for this node to attach to. The BoneAttachment node will copy the transform of the selected bone.
@@ -5530,7 +5394,6 @@
         <member name="T:Godot.ButtonGroup">
             <summary>
             Group of [Button]. All direct and indirect children buttons become radios. Only one allows being pressed.
-            [member BaseButton.toggle_mode] should be [code]true[/code].
             </summary>
         </member>
         <member name="M:Godot.ButtonGroup.GetPressedButton">
@@ -5648,9 +5511,9 @@
             Makes this camera the current Camera for the [Viewport] (see class description). If the Camera Node is outside the scene tree, it will attempt to become current once it's added.
             </summary>
         </member>
-        <member name="M:Godot.Camera.ClearCurrent(System.Boolean)">
+        <member name="M:Godot.Camera.ClearCurrent">
             <summary>
-            If this is the current Camera, remove it from being current. If [code]enable_next[/code] is true, request to make the next Camera current, if any.
+            If this is the current Camera, remove it from being current. If it is inside the node tree, request to make the next Camera current, if any.
             </summary>
         </member>
         <member name="M:Godot.Camera.GetCameraTransform">
@@ -5996,14 +5859,6 @@
             &lt;param name="modulate"&gt;If the param is null, then the default value is new Color(1, 1, 1, 1)&lt;/param&gt;
             </summary>
         </member>
-        <member name="M:Godot.CanvasItem.DrawMesh(Godot.Mesh,Godot.Texture,Godot.Texture)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.CanvasItem.DrawMultimesh(Godot.Mesh,Godot.Texture,Godot.Texture)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.CanvasItem.DrawSetTransform(Godot.Vector2,System.Single,Godot.Vector2)">
             <summary>
             Sets a custom transform for drawing via components. Anything drawn afterwards will be transformed by this.
@@ -6149,9 +6004,9 @@
             The custom [Viewport] node assigned to the [code]CanvasLayer[/code]. If null, uses the default viewport instead.
             </summary>
         </member>
-        <member name="M:Godot.CanvasLayer.GetCanvas">
+        <member name="M:Godot.CanvasLayer.GetWorld2d">
             <summary>
-            Returns the RID of the canvas used by this layer.
+            Return the [World2D] used by this layer.
             </summary>
         </member>
         <member name="T:Godot.CanvasModulate">
@@ -6669,11 +6524,6 @@
             If [code]true[/code], allows the color R, G, B component values to go beyond 1.0, which can be used for certain special operations that require it (like tinting without darkening or rendering sprites in HDR).
             </summary>
         </member>
-        <member name="P:Godot.ColorPicker.DeferredMode">
-            <summary>
-            If [code]true[/code], the color will apply only after user releases mouse button, otherwise it will apply immediatly even in mouse motion event (which can cause performance issues).
-            </summary>
-        </member>
         <member name="M:Godot.ColorPicker.AddPreset(Godot.Color)">
             <summary>
             Adds the current selected to color to a list of colors (presets), the presets will be displayed in the color picker and the user will be able to select them, notice that the presets list is only for this color picker.
@@ -6807,7 +6657,7 @@
         </member>
         <member name="M:Godot.ConfigFile.SetValue(System.String,System.String,System.Object)">
             <summary>
-            Assigns a value to the specified key of the specified section. If the section and/or the key do not exist, they are created. Passing a [code]null[/code] value deletes the specified key if it exists, and deletes the section if it ends up empty once the key has been removed.
+            Assigns a value to the specified key of the the specified section. If the section and/or the key do not exist, they are created. Passing a [code]null[/code] value deletes the specified key if it exists, and deletes the section if it ends up empty once the key has been removed.
             </summary>
         </member>
         <member name="M:Godot.ConfigFile.GetValue(System.String,System.String,System.Object)">
@@ -7381,154 +7231,6 @@
             Currently, this method does nothing.
             </summary>
         </member>
-        <member name="P:Godot.CSGBox.Width">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGBox.Height">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGBox.Depth">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGBox.Material">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGCylinder.Radius">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGCylinder.Height">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGCylinder.Sides">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGCylinder.Cone">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGCylinder.SmoothFaces">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGCylinder.Material">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGMesh.Mesh">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.Polygon">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.Mode">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.Depth">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.SpinDegrees">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.SpinSides">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.PathNode">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.PathInterval">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.PathRotation">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.SmoothFaces">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPolygon.Material">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGPrimitive.InvertFaces">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGShape.Operation">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGShape.UseCollision">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGShape.Snap">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.CSGShape.IsRootShape">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGSphere.Radius">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGSphere.RadialSegments">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGSphere.Rings">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGSphere.SmoothFaces">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGSphere.Material">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGTorus.InnerRadius">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGTorus.OuterRadius">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGTorus.Sides">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGTorus.RingSides">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGTorus.SmoothFaces">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.CSGTorus.Material">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.CSharpScript.New(System.Object[])">
             <summary>
             </summary>
@@ -7800,18 +7502,6 @@
             Returns the cache of points as a [PoolVector2Array].
             </summary>
         </member>
-        <member name="M:Godot.Curve2D.GetClosestPoint(Godot.Vector2)">
-            <summary>
-            Returns the closest point (in curve's local space) to [code]to_point[/code].
-            [code]to_point[/code] must be in this curve's local space.
-            </summary>
-        </member>
-        <member name="M:Godot.Curve2D.GetClosestOffset(Godot.Vector2)">
-            <summary>
-            Returns the closest offset to [code]to_point[/code]. This offset is meant to be used in [method interpolate_baked].
-            [code]to_point[/code] must be in this curve's local space.
-            </summary>
-        </member>
         <member name="M:Godot.Curve2D.Tessellate(System.Int32,System.Single)">
             <summary>
             Returns a list of points along the curve, with a curvature controlled point density. That is, the curvier parts will have more points than the straighter parts.
@@ -7829,11 +7519,6 @@
         <member name="P:Godot.Curve3D.BakeInterval">
             <summary>
             The distance in meters between two adjacent cached points. Changing it forces the cache to be recomputed the next time the [method get_baked_points] or [method get_baked_length] function is called. The smaller the distance, the more points in the cache and the more memory it will consume, so use with care.
-            </summary>
-        </member>
-        <member name="P:Godot.Curve3D.UpVectorEnabled">
-            <summary>
-            If [code]true[/code], the curve will bake up vectors used for orientation. See [OrientedPathFollow]. Changing it forces the cache to be recomputed.
             </summary>
         </member>
         <member name="M:Godot.Curve3D.GetPointCount">
@@ -7862,7 +7547,7 @@
         <member name="M:Godot.Curve3D.SetPointTilt(System.Int32,System.Single)">
             <summary>
             Sets the tilt angle in radians for the point "idx". If the index is out of bounds, the function sends an error to the console.
-            The tilt controls the rotation along the look-at axis an object traveling the path would have. In the case of a curve controlling a [PathFollow] or [OrientedPathFollow], this tilt is an offset over the natural tilt the [PathFollow] or [OrientedPathFollow] calculates.
+            The tilt controls the rotation along the look-at axis an object traveling the path would have. In the case of a curve controlling a [PathFollow], this tilt is an offset over the natural tilt the PathFollow calculates.
             </summary>
         </member>
         <member name="M:Godot.Curve3D.GetPointTilt(System.Int32)">
@@ -7923,13 +7608,6 @@
             Cubic interpolation tends to follow the curves better, but linear is faster (and often, precise enough).
             </summary>
         </member>
-        <member name="M:Godot.Curve3D.InterpolateBakedUpVector(System.Single,System.Boolean)">
-            <summary>
-            Returns an up vector within the curve at position [code]offset[/code], where [code]offset[/code] is measured as a distance in 3D units along the curve.
-            To do that, it finds the two cached up vectors where the [code]offset[/code] lies between, then interpolates the values. If [code]apply_tilt[/code] is [code]true[/code], an interpolated tilt is applied to the interpolated up vector.
-            If the curve has no up vectors, the function sends an error to the console, and returns (0, 1, 0).
-            </summary>
-        </member>
         <member name="M:Godot.Curve3D.GetBakedPoints">
             <summary>
             Returns the cache of points as a [PoolVector3Array].
@@ -7938,24 +7616,6 @@
         <member name="M:Godot.Curve3D.GetBakedTilts">
             <summary>
             Returns the cache of tilts as a [RealArray].
-            </summary>
-        </member>
-        <member name="M:Godot.Curve3D.GetBakedUpVectors">
-            <summary>
-            Returns the cache of up vectors as a [PoolVector3Array].
-            If [member up_vector_enabled] is [code]false[/code], the cache will be empty.
-            </summary>
-        </member>
-        <member name="M:Godot.Curve3D.GetClosestPoint(Godot.Vector3)">
-            <summary>
-            Returns the closest point (in curve's local space) to [code]to_point[/code].
-            [code]to_point[/code] must be in this curve's local space.
-            </summary>
-        </member>
-        <member name="M:Godot.Curve3D.GetClosestOffset(Godot.Vector3)">
-            <summary>
-            Returns the closest offset to [code]to_point[/code]. This offset is meant to be used in one of the interpolate_baked* methods.
-            [code]to_point[/code] must be in this curve's local space.
             </summary>
         </member>
         <member name="M:Godot.Curve3D.Tessellate(System.Int32,System.Single)">
@@ -8208,14 +7868,6 @@
             The font size.
             </summary>
         </member>
-        <member name="P:Godot.DynamicFont.OutlineSize">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.DynamicFont.OutlineColor">
-            <summary>
-            </summary>
-        </member>
         <member name="P:Godot.DynamicFont.UseMipmaps">
             <summary>
             If [code]true[/code] mipmapping is used.
@@ -8324,10 +7976,6 @@
             Controls how fast or slow the in-game clock ticks versus the real life one. It defaults to 1.0. A value of 2.0 means the game moves twice as fast as real life, whilst a value of 0.5 means the game moves at half the regular speed.
             </summary>
         </member>
-        <member name="P:Godot.Engine.PhysicsJitterFix">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.Engine.GetFramesDrawn">
             <summary>
             Returns the total number of frames drawn.
@@ -8354,38 +8002,6 @@
             "string"   - major + minor + patch + status + build in a single String
             </summary>
         </member>
-        <member name="M:Godot.Engine.GetAuthorInfo">
-            <summary>
-            Returns engine author information in a Dictionary.
-            "lead_developers" - Array of Strings, lead developer names
-            "founders" - Array of Strings, founder names
-            "project_managers" - Array of Strings, project manager names
-            "developers" - Array of Strings, developer names
-            </summary>
-        </member>
-        <member name="M:Godot.Engine.GetCopyrightInfo">
-            <summary>
-            Returns an Array of copyright information Dictionaries.
-            "name" - String, component name
-            "parts" - Array of Dictionaries {"files", "copyright", "license"} describing subsections of the component
-            </summary>
-        </member>
-        <member name="M:Godot.Engine.GetDonorInfo">
-            <summary>
-            Returns a Dictionary of Arrays of donor names.
-            {"platinum_sponsors", "gold_sponsors", "mini_sponsors", "gold_donors", "silver_donors", "bronze_donors"}
-            </summary>
-        </member>
-        <member name="M:Godot.Engine.GetLicenseInfo">
-            <summary>
-            Returns Dictionary of licenses used by Godot and included third party components.
-            </summary>
-        </member>
-        <member name="M:Godot.Engine.GetLicenseText">
-            <summary>
-            Returns Godot license text.
-            </summary>
-        </member>
         <member name="M:Godot.Engine.IsInPhysicsFrame">
             <summary>
             Returns [code]true[/code] if the game is inside the fixed process and physics phase of the game loop.
@@ -8401,7 +8017,7 @@
         </member>
         <member name="T:Godot.Environment">
             <summary>
-            Resource for environment nodes (like [WorldEnvironment]) that define multiple environment operations (such as background [Sky] or [Color], ambient light, fog, depth-of-field...). These parameters affect the final render of the scene. The order of these operations is:
+            Resource for environment nodes (like [WorldEnvironment]) that define multiple environment operations (such as background [Sky] or [Color], ambient light, fog, depth-of-field...).	These parameters affect the final render of the scene. The order of these operations is:
             - DOF Blur
             - Motion Blur
             - Bloom
@@ -8783,12 +8399,12 @@
             [codeblock]
             func save(content):
             var file = File.new()
-            file.open("user://save_game.dat", File.WRITE)
+            file.open("user://save_game.dat", file.WRITE)
             file.store_string(content)
             file.close()
             func load():
             var file = File.new()
-            file.open("user://save_game.dat", File.READ)
+            file.open("user://save_game.dat", file.READ)
             var content = file.get_as_text()
             file.close()
             return content
@@ -9072,10 +8688,6 @@
             Return the vertical box container of the dialog, custom controls can be added to it.
             </summary>
         </member>
-        <member name="M:Godot.FileDialog.GetLineEdit">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.FileDialog.DeselectItems">
             <summary>
             </summary>
@@ -9090,11 +8702,10 @@
             Font contains a unicode compatible character set, as well as the ability to draw it with variable width, ascent, descent and kerning. For creating fonts from TTF files (or other font formats), see the editor support for fonts. TODO check wikipedia for graph of ascent/baseline/descent/height/etc.
             </summary>
         </member>
-        <member name="M:Godot.Font.Draw(Godot.RID,Godot.Vector2,System.String,System.Nullable{Godot.Color},System.Int32,System.Nullable{Godot.Color})">
+        <member name="M:Godot.Font.Draw(Godot.RID,Godot.Vector2,System.String,System.Nullable{Godot.Color},System.Int32)">
             <summary>
             Draw "string" into a canvas item using the font at a given position, with "modulate" color, and optionally clipping the width. "position" specifies the baseline, not the top. To draw from the top, [i]ascent[/i] must be added to the Y axis.
             &lt;param name="modulate"&gt;If the param is null, then the default value is new Color(1, 1, 1, 1)&lt;/param&gt;
-            &lt;param name="outlineModulate"&gt;If the param is null, then the default value is new Color(1, 1, 1, 1)&lt;/param&gt;
             </summary>
         </member>
         <member name="M:Godot.Font.GetAscent">
@@ -9121,11 +8732,7 @@
             Return the size of a string, taking kerning and advance into account.
             </summary>
         </member>
-        <member name="M:Godot.Font.HasOutline">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Font.DrawChar(Godot.RID,Godot.Vector2,System.Int32,System.Int32,System.Nullable{Godot.Color},System.Boolean)">
+        <member name="M:Godot.Font.DrawChar(Godot.RID,Godot.Vector2,System.Int32,System.Int32,System.Nullable{Godot.Color})">
             <summary>
             Draw character "char" into a canvas item using the font at a given position, with "modulate" color, and optionally kerning if "next" is passed. clipping the width. "position" specifies the baseline, not the top. To draw from the top, [i]ascent[/i] must be added to the Y axis. The width used by the character is returned, making this function useful for drawing strings character by character.
             &lt;param name="modulate"&gt;If the param is null, then the default value is new Color(1, 1, 1, 1)&lt;/param&gt;
@@ -9173,10 +8780,6 @@
             <summary>
             </summary>
         </member>
-        <member name="P:Godot.GDNativeLibrary.ConfigFile">
-            <summary>
-            </summary>
-        </member>
         <member name="P:Godot.GDNativeLibrary.LoadOnce">
             <summary>
             </summary>
@@ -9190,6 +8793,10 @@
             </summary>
         </member>
         <member name="P:Godot.GDNativeLibrary.Reloadable">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Godot.GDNativeLibrary.GetConfigFile">
             <summary>
             </summary>
         </member>
@@ -9243,12 +8850,12 @@
         </member>
         <member name="T:Godot.Generic6DOFJoint">
             <summary>
-            The first 3 DOF axes are linear axes, which represent translation of Bodies, and the latter 3 DOF axes represent the angular motion. Each axis can be either locked, or limited.
+            The first 3 dof axes are linear axes, which represent translation of Bodies, and the latter 3 dof axes represent the angular motion. Each axis can be either locked, or limited.
             </summary>
         </member>
         <member name="P:Godot.Generic6DOFJoint.LinearLimitX__enabled">
             <summary>
-            If [code]true[/code] the linear motion across the x-axis is limited.
+            If [code]true[/code] the linear motion across the x-axis is enabled.
             </summary>
         </member>
         <member name="P:Godot.Generic6DOFJoint.LinearLimitX__upperDistance">
@@ -9276,24 +8883,9 @@
             The amount of damping that happens at the x-motion.
             </summary>
         </member>
-        <member name="P:Godot.Generic6DOFJoint.LinearMotorX__enabled">
-            <summary>
-            If [code]true[/code] then there is a linear motor on the x-axis. It will attempt to reach the target velocity while staying within the force limits.
-            </summary>
-        </member>
-        <member name="P:Godot.Generic6DOFJoint.LinearMotorX__targetVelocity">
-            <summary>
-            The speed that the linear motor will attempt to reach on the x-axis.
-            </summary>
-        </member>
-        <member name="P:Godot.Generic6DOFJoint.LinearMotorX__forceLimit">
-            <summary>
-            The maximum force the linear motor can apply on the x-axis while trying to reach the target velocity.
-            </summary>
-        </member>
         <member name="P:Godot.Generic6DOFJoint.AngularLimitX__enabled">
             <summary>
-            If [code]true[/code] rotation across the x-axis is limited.
+            If [code]true[/code] rotation across the x-axis is enabled.
             </summary>
         </member>
         <member name="P:Godot.Generic6DOFJoint.AngularLimitX__upperAngle">
@@ -9349,7 +8941,7 @@
         </member>
         <member name="P:Godot.Generic6DOFJoint.LinearLimitY__enabled">
             <summary>
-            If [code]true[/code] the linear motion across the y-axis is limited.
+            If [code]true[/code] the linear motion across the y-axis is enabled.
             </summary>
         </member>
         <member name="P:Godot.Generic6DOFJoint.LinearLimitY__upperDistance">
@@ -9377,24 +8969,9 @@
             The amount of damping that happens at the y-motion.
             </summary>
         </member>
-        <member name="P:Godot.Generic6DOFJoint.LinearMotorY__enabled">
-            <summary>
-            If [code]true[/code] then there is a linear motor on the y-axis. It will attempt to reach the target velocity while staying within the force limits.
-            </summary>
-        </member>
-        <member name="P:Godot.Generic6DOFJoint.LinearMotorY__targetVelocity">
-            <summary>
-            The speed that the linear motor will attempt to reach on the y-axis.
-            </summary>
-        </member>
-        <member name="P:Godot.Generic6DOFJoint.LinearMotorY__forceLimit">
-            <summary>
-            The maximum force the linear motor can apply on the y-axis while trying to reach the target velocity.
-            </summary>
-        </member>
         <member name="P:Godot.Generic6DOFJoint.AngularLimitY__enabled">
             <summary>
-            If [code]true[/code] rotation across the y-axis is limited.
+            If [code]true[/code] rotation across the y-axis is enabled.
             </summary>
         </member>
         <member name="P:Godot.Generic6DOFJoint.AngularLimitY__upperAngle">
@@ -9449,7 +9026,7 @@
         </member>
         <member name="P:Godot.Generic6DOFJoint.LinearLimitZ__enabled">
             <summary>
-            If [code]true[/code] the linear motion across the z-axis is limited.
+            If [code]true[/code] the linear motion across the z-axis is enabled.
             </summary>
         </member>
         <member name="P:Godot.Generic6DOFJoint.LinearLimitZ__upperDistance">
@@ -9477,24 +9054,9 @@
             The amount of damping that happens at the z-motion.
             </summary>
         </member>
-        <member name="P:Godot.Generic6DOFJoint.LinearMotorZ__enabled">
-            <summary>
-            If [code]true[/code] then there is a linear motor on the z-axis. It will attempt to reach the target velocity while staying within the force limits.
-            </summary>
-        </member>
-        <member name="P:Godot.Generic6DOFJoint.LinearMotorZ__targetVelocity">
-            <summary>
-            The speed that the linear motor will attempt to reach on the z-axis.
-            </summary>
-        </member>
-        <member name="P:Godot.Generic6DOFJoint.LinearMotorZ__forceLimit">
-            <summary>
-            The maximum force the linear motor can apply on the z-axis while trying to reach the target velocity.
-            </summary>
-        </member>
         <member name="P:Godot.Generic6DOFJoint.AngularLimitZ__enabled">
             <summary>
-            If [code]true[/code] rotation across the z-axis is limited.
+            If [code]true[/code] rotation across the z-axis is enabled.
             </summary>
         </member>
         <member name="P:Godot.Generic6DOFJoint.AngularLimitZ__upperAngle">
@@ -9570,11 +9132,6 @@
         <member name="M:Godot.Geometry.SegmentIntersectsSegment2d(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)">
             <summary>
             Checks if the two segments ([code]from_a[/code], [code]to_a[/code]) and ([code]from_b[/code], [code]to_b[/code]) intersect. If yes, return the point of intersection as [Vector2]. If no intersection takes place, returns an empty [Variant].
-            </summary>
-        </member>
-        <member name="M:Godot.Geometry.LineIntersectsLine2d(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)">
-            <summary>
-            Checks if the two lines ([code]from_a[/code], [code]dir_a[/code]) and ([code]from_b[/code], [code]dir_b[/code]) intersect. If yes, return the point of intersection as [Vector2]. If no intersection takes place, returns an empty [Variant]. Note that the lines are specified using direction vectors, not end points.
             </summary>
         </member>
         <member name="M:Godot.Geometry.GetClosestPointsBetweenSegments2d(Godot.Vector2,Godot.Vector2,Godot.Vector2,Godot.Vector2)">
@@ -10113,10 +9670,6 @@
             The number of columns in the [code]GridContainer[/code]. If modified, [code]GridContainer[/code] reorders its children to accommodate the new layout.
             </summary>
         </member>
-        <member name="M:Godot.GridContainer.GetChildControlAtCell(System.Int32,System.Int32)">
-            <summary>
-            </summary>
-        </member>
         <member name="T:Godot.GridMap">
             <summary>
             GridMap lets you place meshes on a grid interactively. It works both from the editor and can help you create in-game level editors.
@@ -10598,7 +10151,7 @@
             Flips the image vertically.
             </summary>
         </member>
-        <member name="M:Godot.Image.GenerateMipmaps(System.Boolean)">
+        <member name="M:Godot.Image.GenerateMipmaps">
             <summary>
             Generates mipmaps for the image. Mipmaps are pre-calculated and lower resolution copies of the image. Mipmaps are automatically used if the image needs to be scaled down when rendered. This improves image quality and the performance of the rendering. Returns an error if the image is compressed, in a custom format or if the image's width/height is 0.
             </summary>
@@ -10678,14 +10231,6 @@
             Converts the image's data to represent coordinates on a 3D plane. This is used when the image represents a normalmap. A normalmap can add lots of detail to a 3D surface without increasing the polygon count.
             </summary>
         </member>
-        <member name="M:Godot.Image.RgbeToSrgb">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Image.BumpmapToNormalmap(System.Single)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.Image.BlitRect(Godot.Image,Godot.Rect2,Godot.Vector2)">
             <summary>
             Copies [code]src_rect[/code] from [code]src[/code] image to this image at coordinates [code]dst[/code].
@@ -10736,19 +10281,6 @@
             Unlocks the data and prevents changes.
             </summary>
         </member>
-        <member name="M:Godot.Image.GetPixelv(Godot.Vector2)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Image.GetPixel(System.Int32,System.Int32)">
-            <summary>
-            Returns the color of the pixel at [code](x, y)[/code] if the image is locked. If the image is unlocked it always returns a [Color] with the value [code](0, 0, 0, 1.0)[/code].
-            </summary>
-        </member>
-        <member name="M:Godot.Image.SetPixelv(Godot.Vector2,Godot.Color)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.Image.SetPixel(System.Int32,System.Int32,Godot.Color)">
             <summary>
             Sets the [Color] of the pixel at [code](x, y)[/code] if the image is locked. Example:
@@ -10762,14 +10294,17 @@
             [/codeblock]
             </summary>
         </member>
+        <member name="M:Godot.Image.GetPixel(System.Int32,System.Int32)">
+            <summary>
+            Returns the color of the pixel at [code](x, y)[/code] if the image is locked. If the image is unlocked it always returns a [Color] with the value [code](0, 0, 0, 1.0)[/code].
+            </summary>
+        </member>
         <member name="M:Godot.Image.LoadPngFromBuffer(System.Byte[])">
             <summary>
-            Loads an image from the binary contents of a PNG file.
             </summary>
         </member>
         <member name="M:Godot.Image.LoadJpgFromBuffer(System.Byte[])">
             <summary>
-            Loads an image from the binary contents of a JPEG file.
             </summary>
         </member>
         <member name="T:Godot.ImageTexture">
@@ -10806,7 +10341,7 @@
         </member>
         <member name="M:Godot.ImageTexture.Load(System.String)">
             <summary>
-            Load an [code]ImageTexture[/code] from a file path.
+            Load an [code]ImageTexture[/code].
             </summary>
         </member>
         <member name="M:Godot.ImageTexture.SetData(Godot.Image)">
@@ -10909,10 +10444,6 @@
         <member name="M:Godot.Input.IsActionJustReleased(System.String)">
             <summary>
             Returns [code]true[/code] when the user stops pressing the action event, meaning it's true only on the frame that the user released the button.
-            </summary>
-        </member>
-        <member name="M:Godot.Input.GetActionStrength(System.String)">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.Input.AddJoyMapping(System.String,System.Boolean)">
@@ -11046,13 +10577,9 @@
             If the specified action is already pressed, this will release it.
             </summary>
         </member>
-        <member name="M:Godot.Input.SetDefaultCursorShape(Godot.Input.CursorShape)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.Input.SetCustomMouseCursor(Godot.Resource,Godot.Input.CursorShape,System.Nullable{Godot.Vector2})">
             <summary>
-            Set a custom mouse cursor image, which is only visible inside the game window. The hotspot can also be specified. Passing [code]null[/code] to the image parameter resets to the system cursor. See enum [code]CURSOR_*[/code] for the list of shapes.
+            Set a custom mouse cursor image, which is only visible inside the game window. The hotspot can also be specified. See enum [code]CURSOR_*[/code] for the list of shapes.
             &lt;param name="hotspot"&gt;If the param is null, then the default value is new Vector2(0, 0)&lt;/param&gt;
             </summary>
         </member>
@@ -11071,6 +10598,11 @@
             The event's device ID.
             </summary>
         </member>
+        <member name="M:Godot.InputEvent.IsPressed">
+            <summary>
+            Returns [code]true[/code] if this input event is pressed. Not relevant for the event types [code]MOUSE_MOTION[/code], [code]SCREEN_DRAG[/code] or [code]NONE[/code].
+            </summary>
+        </member>
         <member name="M:Godot.InputEvent.IsAction(System.String)">
             <summary>
             Returns [code]true[/code] if this input event matches a pre-defined action of any type.
@@ -11086,15 +10618,6 @@
             Returns [code]true[/code] if the given action is released (i.e. not pressed). Not relevant for the event types [code]MOUSE_MOTION[/code], [code]SCREEN_DRAG[/code] or [code]NONE[/code].
             </summary>
         </member>
-        <member name="M:Godot.InputEvent.GetActionStrength(System.String)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.InputEvent.IsPressed">
-            <summary>
-            Returns [code]true[/code] if this input event is pressed. Not relevant for the event types [code]MOUSE_MOTION[/code], [code]SCREEN_DRAG[/code] or [code]NONE[/code].
-            </summary>
-        </member>
         <member name="M:Godot.InputEvent.IsEcho">
             <summary>
             Returns [code]true[/code] if this input event is an echo event (only for events of type KEY).
@@ -11103,6 +10626,11 @@
         <member name="M:Godot.InputEvent.AsText">
             <summary>
             Returns a [String] representation of the event.
+            </summary>
+        </member>
+        <member name="M:Godot.InputEvent.ActionMatch(Godot.InputEvent)">
+            <summary>
+            Returns [code]true[/code] if this event matches [code]event[/code].
             </summary>
         </member>
         <member name="M:Godot.InputEvent.ShortcutMatch(Godot.InputEvent)">
@@ -11360,19 +10888,14 @@
             Returns an array of all actions in the [code]InputMap[/code].
             </summary>
         </member>
-        <member name="M:Godot.InputMap.AddAction(System.String,System.Single)">
+        <member name="M:Godot.InputMap.AddAction(System.String)">
             <summary>
-            Adds an (empty) action to the [code]InputMap[/code], with a configurable [code]deadzone[/code].
-            An [InputEvent] can then be added to this action with [method action_add_event].
+            Adds an (empty) action to the [code]InputMap[/code]. An [InputEvent] can then be added to this action with [method action_add_event].
             </summary>
         </member>
         <member name="M:Godot.InputMap.EraseAction(System.String)">
             <summary>
             Removes an action from the [code]InputMap[/code].
-            </summary>
-        </member>
-        <member name="M:Godot.InputMap.ActionSetDeadzone(System.String,System.Single)">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.InputMap.ActionAddEvent(System.String,Godot.InputEvent)">
@@ -11388,10 +10911,6 @@
         <member name="M:Godot.InputMap.ActionEraseEvent(System.String,Godot.InputEvent)">
             <summary>
             Removes an [InputEvent] from an action.
-            </summary>
-        </member>
-        <member name="M:Godot.InputMap.ActionEraseEvents(System.String)">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.InputMap.GetActionList(System.String)">
@@ -11416,10 +10935,6 @@
             </summary>
         </member>
         <member name="M:Godot.InstancePlaceholder.GetStoredValues(System.Boolean)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.InstancePlaceholder.CreateInstance(System.Boolean,Godot.PackedScene)">
             <summary>
             </summary>
         </member>
@@ -11592,16 +11107,6 @@
             <summary>
             </summary>
         </member>
-        <member name="M:Godot.ItemList.SetItemIconModulate(System.Int32,Godot.Color)">
-            <summary>
-            Sets a modulating [Color] for item's icon at the specified index.
-            </summary>
-        </member>
-        <member name="M:Godot.ItemList.GetItemIconModulate(System.Int32)">
-            <summary>
-            Returns a [Color] modulating item's icon at the specified index.
-            </summary>
-        </member>
         <member name="M:Godot.ItemList.SetItemSelectable(System.Int32,System.Boolean)">
             <summary>
             Allow or disallow selection of the item at the specified index.
@@ -11671,11 +11176,6 @@
             Ensure item at specified index is not selected.
             </summary>
         </member>
-        <member name="M:Godot.ItemList.UnselectAll">
-            <summary>
-            Ensure there are no items selected.
-            </summary>
-        </member>
         <member name="M:Godot.ItemList.IsSelected(System.Int32)">
             <summary>
             Returns whether or not item at the specified index is currently selected.
@@ -11684,11 +11184,6 @@
         <member name="M:Godot.ItemList.GetSelectedItems">
             <summary>
             Returns the list of selected indexes.
-            </summary>
-        </member>
-        <member name="M:Godot.ItemList.MoveItem(System.Int32,System.Int32)">
-            <summary>
-            Moves item at index [code]from_idx[/code] to [code]to_idx[/code].
             </summary>
         </member>
         <member name="M:Godot.ItemList.GetItemCount">
@@ -11709,11 +11204,6 @@
         <member name="M:Godot.ItemList.SortItemsByText">
             <summary>
             Sorts items in the list by their text.
-            </summary>
-        </member>
-        <member name="M:Godot.ItemList.IsAnythingSelected">
-            <summary>
-            Returns [code]true[/code] if one or more items are selected.
             </summary>
         </member>
         <member name="M:Godot.ItemList.GetItemAtPosition(Godot.Vector2,System.Boolean)">
@@ -11877,12 +11367,12 @@
             If the body is at least this close to another body, this body will consider them to be colliding.
             </summary>
         </member>
-        <member name="M:Godot.KinematicBody.MoveAndCollide(Godot.Vector3,System.Boolean)">
+        <member name="M:Godot.KinematicBody.MoveAndCollide(Godot.Vector3)">
             <summary>
             Moves the body along the vector [code]rel_vec[/code]. The body will stop if it collides. Returns a [KinematicCollision], which contains information about the collision.
             </summary>
         </member>
-        <member name="M:Godot.KinematicBody.MoveAndSlide(Godot.Vector3,System.Nullable{Godot.Vector3},System.Single,System.Int32,System.Single,System.Boolean)">
+        <member name="M:Godot.KinematicBody.MoveAndSlide(Godot.Vector3,System.Nullable{Godot.Vector3},System.Single,System.Int32,System.Single)">
             <summary>
             Moves the body along a vector. If the body collides with another, it will slide along the other body rather than stop immediately. If the other body is a [code]KinematicBody[/code] or [RigidBody], it will also be affected by the motion of the other body. You can use this to make moving or rotating platforms, or to make nodes push other nodes.
             [code]linear_velocity[/code] is a value in pixels per second. Unlike in for example [method move_and_collide], you should [i]not[/i] multiply it with [code]delta[/code] — this is done by the method.
@@ -11894,7 +11384,7 @@
             &lt;param name="floorNormal"&gt;If the param is null, then the default value is new Vector3(0, 0, 0)&lt;/param&gt;
             </summary>
         </member>
-        <member name="M:Godot.KinematicBody.TestMove(Godot.Transform,Godot.Vector3,System.Boolean)">
+        <member name="M:Godot.KinematicBody.TestMove(Godot.Transform,Godot.Vector3)">
             <summary>
             Checks for collisions without moving the body. Virtually sets the node's position, scale and rotation to that of the given [Transform], then tries to move the body along the vector [code]rel_vec[/code]. Returns [code]true[/code] if a collision would occur.
             </summary>
@@ -11941,12 +11431,12 @@
             If the body is at least this close to another body, this body will consider them to be colliding.
             </summary>
         </member>
-        <member name="M:Godot.KinematicBody2D.MoveAndCollide(Godot.Vector2,System.Boolean)">
+        <member name="M:Godot.KinematicBody2D.MoveAndCollide(Godot.Vector2)">
             <summary>
             Moves the body along the vector [code]rel_vec[/code]. The body will stop if it collides. Returns a [KinematicCollision2D], which contains information about the collision.
             </summary>
         </member>
-        <member name="M:Godot.KinematicBody2D.MoveAndSlide(Godot.Vector2,System.Nullable{Godot.Vector2},System.Boolean,System.Single,System.Int32,System.Single)">
+        <member name="M:Godot.KinematicBody2D.MoveAndSlide(Godot.Vector2,System.Nullable{Godot.Vector2},System.Single,System.Int32,System.Single)">
             <summary>
             Moves the body along a vector. If the body collides with another, it will slide along the other body rather than stop immediately. If the other body is a [code]KinematicBody2D[/code] or [RigidBody2D], it will also be affected by the motion of the other body. You can use this to make moving or rotating platforms, or to make nodes push other nodes.
             [code]linear_velocity[/code] is a value in pixels per second. Unlike in for example [method move_and_collide], you should [i]not[/i] multiply it with [code]delta[/code] — this is done by the method.
@@ -11958,7 +11448,7 @@
             &lt;param name="floorNormal"&gt;If the param is null, then the default value is new Vector2(0, 0)&lt;/param&gt;
             </summary>
         </member>
-        <member name="M:Godot.KinematicBody2D.TestMove(Godot.Transform2D,Godot.Vector2,System.Boolean)">
+        <member name="M:Godot.KinematicBody2D.TestMove(Godot.Transform2D,Godot.Vector2)">
             <summary>
             Checks for collisions without moving the body. Virtually sets the node's position, scale and rotation to that of the given [Transform2D], then tries to move the body along the vector [code]rel_vec[/code]. Returns [code]true[/code] if a collision would occur.
             </summary>
@@ -12531,12 +12021,7 @@
         </member>
         <member name="P:Godot.LineEdit.Secret">
             <summary>
-            If [code]true[/code], every character is replaced with the secret character (see [member secret_character]).
-            </summary>
-        </member>
-        <member name="P:Godot.LineEdit.SecretCharacter">
-            <summary>
-            The character to use to mask secret input (defaults to "*"). Only a single character can be used as the secret character.
+            If [code]true[/code] every character is shown as "*".
             </summary>
         </member>
         <member name="P:Godot.LineEdit.ExpandToTextLength">
@@ -13017,18 +12502,6 @@
             This helper creates a [MeshInstance] child node with gizmos at every vertex calculated from the mesh geometry. It's mainly used for testing.
             </summary>
         </member>
-        <member name="P:Godot.MeshInstance2D.Mesh">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.MeshInstance2D.Texture">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.MeshInstance2D.NormalMap">
-            <summary>
-            </summary>
-        </member>
         <member name="T:Godot.MeshLibrary">
             <summary>
             Library of meshes. Contains a list of [Mesh] resources, each with name and ID. Useful for GridMap or painting Terrain.
@@ -13107,6 +12580,42 @@
             Get an unused id for a new item.
             </summary>
         </member>
+        <member name="T:Godot.MobileVRInterface">
+            <summary>
+            This is a generic mobile VR implementation where you need to provide details about the phone and HMD used. It does not rely on any existing framework. This is the most basic interface we have. For the best effect you do need a mobile phone with a gyroscope and accelerometer.
+            Note that even though there is no positional tracking the camera will assume the headset is at a height of 1.85 meters.
+            </summary>
+        </member>
+        <member name="P:Godot.MobileVRInterface.Iod">
+            <summary>
+            The interocular distance, also known as the interpupillary distance. The distance between the pupils of the left and right eye.
+            </summary>
+        </member>
+        <member name="P:Godot.MobileVRInterface.DisplayWidth">
+            <summary>
+            The width of the display in centimeters.
+            </summary>
+        </member>
+        <member name="P:Godot.MobileVRInterface.DisplayToLens">
+            <summary>
+            The distance between the display and the lenses inside of the device in centimeters.
+            </summary>
+        </member>
+        <member name="P:Godot.MobileVRInterface.Oversample">
+            <summary>
+            The oversample setting. Because of the lens distortion we have to render our buffers at a higher resolution then the screen can natively handle. A value between 1.5 and 2.0 often provides good results but at the cost of performance.
+            </summary>
+        </member>
+        <member name="P:Godot.MobileVRInterface.K1">
+            <summary>
+            The k1 lens factor is one of the two constants that define the strength of the lens used and directly influences the lens distortion effect.
+            </summary>
+        </member>
+        <member name="P:Godot.MobileVRInterface.K2">
+            <summary>
+            The k2 lens factor, see k1.
+            </summary>
+        </member>
         <member name="T:Godot.MultiMesh">
             <summary>
             MultiMesh provides low level mesh instancing. If the amount of [Mesh] instances needed goes from hundreds to thousands (and most need to be visible at close proximity) creating such a large amount of [MeshInstance] nodes may affect performance by using too much CPU or video memory.
@@ -13167,71 +12676,6 @@
             The [MultiMesh] resource that will be used and shared among all instances of the [code]MultiMeshInstance[/code].
             </summary>
         </member>
-        <member name="T:Godot.MultiplayerAPI">
-            <summary>
-            This class implements most of the logic behind the high level multiplayer API.
-            By default, [SceneTree] has a reference to this class that is used to provide multiplayer capabilities (i.e. RPC/RSET) across the whole scene.
-            It is possible to override the MultiplayerAPI instance used by specific Nodes by setting the [member Node.custom_multiplayer] property, effectively allowing to run both client and server in the same scene.
-            </summary>
-        </member>
-        <member name="P:Godot.MultiplayerAPI.RefuseNewNetworkConnections">
-            <summary>
-            If [code]true[/code] the MultiplayerAPI's [member network_peer] refuses new incoming connections.
-            </summary>
-        </member>
-        <member name="P:Godot.MultiplayerAPI.NetworkPeer">
-            <summary>
-            The peer object to handle the RPC system (effectively enabling networking when set). Depending on the peer itself, the MultiplayerAPI will become a network server (check with [method is_network_server]) and will set root node's network mode to master (see NETWORK_MODE_* constants in [Node]), or it will become a regular peer with root node set to slave. All child nodes are set to inherit the network mode by default. Handling of networking-related events (connection, disconnection, new clients) is done by connecting to MultiplayerAPI's signals.
-            </summary>
-        </member>
-        <member name="M:Godot.MultiplayerAPI.SetRootNode(Godot.Node)">
-            <summary>
-            Sets the base root node to use for RPCs. Instead of an absolute path, a relative path will be used to find the node upon which the RPC should be executed.
-            This effectively allows to have different branches of the scene tree to be managed by different MultiplayerAPI, allowing for example to run both client and server in the same scene.
-            </summary>
-        </member>
-        <member name="M:Godot.MultiplayerAPI.SendBytes(System.Byte[],System.Int32)">
-            <summary>
-            Sends the given raw [code]bytes[/code] to a specific peer identified by [code]id[/code] (see [method NetworkedMultiplayerPeer.set_target_peer]). Default ID is [code]0[/code], i.e. broadcast to all peers.
-            </summary>
-        </member>
-        <member name="M:Godot.MultiplayerAPI.HasNetworkPeer">
-            <summary>
-            Returns [code]true[/code] if there is a [member network_peer] set.
-            </summary>
-        </member>
-        <member name="M:Godot.MultiplayerAPI.GetNetworkUniqueId">
-            <summary>
-            Returns the unique peer ID of this MultiplayerAPI's [member network_peer].
-            </summary>
-        </member>
-        <member name="M:Godot.MultiplayerAPI.IsNetworkServer">
-            <summary>
-            Returns [code]true[/code] if this MultiplayerAPI's [member network_peer] is in server mode (listening for connections).
-            </summary>
-        </member>
-        <member name="M:Godot.MultiplayerAPI.GetRpcSenderId">
-            <summary>
-            Returns the sender's peer ID for the RPC currently being executed.
-            NOTE: If not inside an RPC this method will return 0.
-            </summary>
-        </member>
-        <member name="M:Godot.MultiplayerAPI.Poll">
-            <summary>
-            Method used for polling the MultiplayerAPI. You only need to worry about this if you are using [member Node.custom_multiplayer] override or you set [member SceneTree.multiplayer_poll] to [code]false[/code]. By default [SceneTree] will poll its MultiplayerAPI for you.
-            NOTE: This method results in RPCs and RSETs being called, so they will be executed in the same context of this function (e.g. [code]_process[/code], [code]physics[/code], [Thread]).
-            </summary>
-        </member>
-        <member name="M:Godot.MultiplayerAPI.Clear">
-            <summary>
-            Clears the current MultiplayerAPI network state (you shouldn't call this unless you know what you are doing).
-            </summary>
-        </member>
-        <member name="M:Godot.MultiplayerAPI.GetNetworkConnectedPeers">
-            <summary>
-            Returns the peer IDs of all connected peers of this MultiplayerAPI's [member network_peer].
-            </summary>
-        </member>
         <member name="T:Godot.Mutex">
             <summary>
             A synchronization Mutex. Element used to synchronize multiple [Thread]s. Basically a binary [Semaphore]. Guarantees that only one thread can ever acquire this lock at a time. Can be used to protect a critical section. Be careful to avoid deadlocks.
@@ -13260,30 +12704,8 @@
             <summary>
             </summary>
         </member>
-        <member name="M:Godot.NativeScript.GetClassDocumentation">
-            <summary>
-            Returns the documentation string that was previously set with [code]godot_nativescript_set_class_documentation[/code].
-            </summary>
-        </member>
-        <member name="M:Godot.NativeScript.GetMethodDocumentation(System.String)">
-            <summary>
-            Returns the documentation string that was previously set with [code]godot_nativescript_set_method_documentation[/code].
-            </summary>
-        </member>
-        <member name="M:Godot.NativeScript.GetSignalDocumentation(System.String)">
-            <summary>
-            Returns the documentation string that was previously set with [code]godot_nativescript_set_signal_documentation[/code].
-            </summary>
-        </member>
-        <member name="M:Godot.NativeScript.GetPropertyDocumentation(System.String)">
-            <summary>
-            Returns the documentation string that was previously set with [code]godot_nativescript_set_property_documentation[/code].
-            </summary>
-        </member>
         <member name="M:Godot.NativeScript.New(System.Object[])">
             <summary>
-            Constructs a new object of the base type with a script of this type already attached.
-            [i]Note[/i]: Any arguments passed to this function will be ignored and not passed to the native constructor function. This will change with in a future API extension.
             </summary>
         </member>
         <member name="T:Godot.Navigation">
@@ -13549,64 +12971,24 @@
             The compression method used for network packets. Default is no compression. These have different tradeoffs of compression speed versus bandwidth, you may need to test which one works best for your use case if you use compression at all.
             </summary>
         </member>
-        <member name="P:Godot.NetworkedMultiplayerENet.TransferChannel">
-            <summary>
-            Set the default channel to be used to transfer data. By default this value is [code]-1[/code] which means that ENet will only use 2 channels, one for reliable and one for unreliable packets. Channel [code]0[/code] is reserved, and cannot be used. Setting this member to any value between [code]0[/code] and [member channel_count] (excluded) will force ENet to use that channel for sending data.
-            </summary>
-        </member>
-        <member name="P:Godot.NetworkedMultiplayerENet.ChannelCount">
-            <summary>
-            The number of channels to be used by ENet. Default: [code]3[/code]. Channels are used to separate different kinds of data. In realiable or ordered mode, for example, the packet delivery order is ensured on a per channel basis.
-            </summary>
-        </member>
-        <member name="P:Godot.NetworkedMultiplayerENet.AlwaysOrdered">
-            <summary>
-            Always use [code]TRANSFER_MODE_ORDERED[/code] in place of [code]TRANSFER_MODE_UNRELIABLE[/code]. This is the only way to use ordering with the RPC system.
-            </summary>
-        </member>
         <member name="M:Godot.NetworkedMultiplayerENet.CreateServer(System.Int32,System.Int32,System.Int32,System.Int32)">
             <summary>
             Create server that listens to connections via [code]port[/code]. The port needs to be an available, unused port between 0 and 65535. Note that ports below 1024 are privileged and may require elevated permissions depending on the platform. To change the interface the server listens on, use [method set_bind_ip]. The default IP is the wildcard [code]*[/code], which listens on all available interfaces. [code]max_clients[/code] is the maximum number of clients that are allowed at once, any number up to 4096 may be used, although the achievable number of simultaneous clients may be far lower and depends on the application. For additional details on the bandwidth parameters, see [method create_client]. Returns [code]OK[/code] if a server was created, [code]ERR_ALREADY_IN_USE[/code] if this NetworkedMultiplayerEnet instance already has an open connection (in which case you need to call [method close_connection] first) or [code]ERR_CANT_CREATE[/code] if the server could not be created.
             </summary>
         </member>
-        <member name="M:Godot.NetworkedMultiplayerENet.CreateClient(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+        <member name="M:Godot.NetworkedMultiplayerENet.CreateClient(System.String,System.Int32,System.Int32,System.Int32)">
             <summary>
-            Create client that connects to a server at [code]address[/code] using specified [code]port[/code]. The given address needs to be either a fully qualified domain nome (e.g. [code]www.example.com[/code]) or an IP address in IPv4 or IPv6 format (e.g. [code]192.168.1.1[/code]). The [code]port[/code] is the port the server is listening on. The [code]in_bandwidth[/code] and [code]out_bandwidth[/code] parameters can be used to limit the incoming and outgoing bandwidth to the given number of bytes per second. The default of 0 means unlimited bandwidth. Note that ENet will strategically drop packets on specific sides of a connection between peers to ensure the peer's bandwidth is not overwhelmed. The bandwidth parameters also determine the window size of a connection which limits the amount of reliable packets that may be in transit at any given time. Returns [code]OK[/code] if a client was created, [code]ERR_ALREADY_IN_USE[/code] if this NetworkedMultiplayerEnet instance already has an open connection (in which case you need to call [method close_connection] first) or [code]ERR_CANT_CREATE[/code] if the client could not be created. If [code]client_port[/code] is specified, the client will also listen to the given port, this is useful in some NAT traveral technique.
+            Create client that connects to a server at address [code]ip[/code] using specified [code]port[/code]. The given IP needs to be in IPv4 or IPv6 address format, for example: [code]192.168.1.1[/code]. The [code]port[/code] is the port the server is listening on. The [code]in_bandwidth[/code] and [code]out_bandwidth[/code] parameters can be used to limit the incoming and outgoing bandwidth to the given number of bytes per second. The default of 0 means unlimited bandwidth. Note that ENet will strategically drop packets on specific sides of a connection between peers to ensure the peer's bandwidth is not overwhelmed. The bandwidth parameters also determine the window size of a connection which limits the amount of reliable packets that may be in transit at any given time. Returns [code]OK[/code] if a client was created, [code]ERR_ALREADY_IN_USE[/code] if this NetworkedMultiplayerEnet instance already has an open connection (in which case you need to call [method close_connection] first) or [code]ERR_CANT_CREATE[/code] if the client could not be created.
             </summary>
         </member>
-        <member name="M:Godot.NetworkedMultiplayerENet.CloseConnection(System.Int32)">
+        <member name="M:Godot.NetworkedMultiplayerENet.CloseConnection">
             <summary>
             Closes the connection. Ignored if no connection is currently established. If this is a server it tries to notify all clients before forcibly disconnecting them. If this is a client it simply closes the connection to the server.
-            </summary>
-        </member>
-        <member name="M:Godot.NetworkedMultiplayerENet.DisconnectPeer(System.Int32,System.Boolean)">
-            <summary>
-            Disconnect the given peer. If "now" is set to true, the connection will be closed immediately without flushing queued messages.
             </summary>
         </member>
         <member name="M:Godot.NetworkedMultiplayerENet.SetBindIp(System.String)">
             <summary>
             The IP used when creating a server. This is set to the wildcard [code]*[/code] by default, which binds to all available interfaces. The given IP needs to be in IPv4 or IPv6 address format, for example: [code]192.168.1.1[/code].
-            </summary>
-        </member>
-        <member name="M:Godot.NetworkedMultiplayerENet.GetPeerAddress(System.Int32)">
-            <summary>
-            Returns the IP address of the given peer.
-            </summary>
-        </member>
-        <member name="M:Godot.NetworkedMultiplayerENet.GetPeerPort(System.Int32)">
-            <summary>
-            Returns the remote port of the given peer.
-            </summary>
-        </member>
-        <member name="M:Godot.NetworkedMultiplayerENet.GetPacketChannel">
-            <summary>
-            Returns the channel of the next packet that will be retrieved via [method PacketPeer.get_packet_peer]
-            </summary>
-        </member>
-        <member name="M:Godot.NetworkedMultiplayerENet.GetLastPacketChannel">
-            <summary>
-            Returns the channel of the last packet fetched via [method PacketPeer.get_packet]
             </summary>
         </member>
         <member name="T:Godot.NetworkedMultiplayerPeer">
@@ -13626,8 +13008,7 @@
         </member>
         <member name="M:Godot.NetworkedMultiplayerPeer.SetTargetPeer(System.Int32)">
             <summary>
-            Sets the peer to which packets will be sent.
-            The [code]id[/code] can be one of: [code]TARGET_PEER_BROADCAST[/code] to send to all connected peers, [code]TARGET_PEER_SERVER[/code] to send to the peer acting as server, a valid peer ID to send to that specific peer, a negative peer ID to send to all peers except that one. Default: [code]TARGET_PEER_BROADCAST[/code]
+            The peer to which packets will be sent. Default value: [code]0[/code].
             </summary>
         </member>
         <member name="M:Godot.NetworkedMultiplayerPeer.GetPacketPeer">
@@ -13703,7 +13084,7 @@
         <member name="T:Godot.Node">
             <summary>
             Nodes are Godot's building blocks. They can be assigned as the child of another node, resulting in a tree arrangement. A given node can contain any number of nodes as children with the requirement that all siblings (direct children of a node) should have unique names.
-            A tree of nodes is called a [i]scene[/i]. Scenes can be saved to the disk and then instanced into other scenes. This allows for very high flexibility in the architecture and data model of Godot projects.
+            A tree of nodes is called a [i]scene[/i]. Scenes can be saved to the disk and then instanced into other scenes. This allows for very high flexibility in the architecture and data model of Godot projects. Nodes can also optionally be added to groups. This makes it possible to access a number of nodes from code (an "enemies" group, for example) to perform grouped actions.
             [b]Scene tree:[/b] The [SceneTree] contains the active tree of nodes. When a node is added to the scene tree, it receives the NOTIFICATION_ENTER_TREE notification and its [method _enter_tree] callback is triggered. Child nodes are always added [i]after[/i] their parent node, i.e. the [method _enter_tree] callback of a parent node will be triggered before its child's.
             Once all nodes have been added in the scene tree, they receive the NOTIFICATION_READY notification and their respective [method _ready] callbacks are triggered. For groups of nodes, the [method _ready] callback is called in reverse order, starting with the children and moving up to the parent nodes.
             This means that when adding a node to the scene tree, the following order will be used for the callbacks: [method _enter_tree] of the parent, [method _enter_tree] of the children, [method _ready] of the children and finally [method _ready] of the parent (recursively for the entire scene tree).
@@ -13733,16 +13114,6 @@
         <member name="P:Godot.Node.Owner">
             <summary>
             The node owner. A node can have any other node as owner (as long as it is a valid parent, grandparent, etc. ascending in the tree). When saving a node (using [PackedScene]) all the nodes it owns will be saved with it. This allows for the creation of complex [SceneTree]s, with instancing and subinstancing.
-            </summary>
-        </member>
-        <member name="P:Godot.Node.Multiplayer">
-            <summary>
-            The [MultiplayerAPI] instance associated with this node. Either the [member custom_multiplayer], or the default SceneTree one (if inside tree).
-            </summary>
-        </member>
-        <member name="P:Godot.Node.CustomMultiplayer">
-            <summary>
-            The override to the default [MultiplayerAPI]. Set to null to use the default SceneTree one.
             </summary>
         </member>
         <member name="M:Godot.Node._EnterTree">
@@ -14070,7 +13441,7 @@
         </member>
         <member name="M:Godot.Node.SetProcessInternal(System.Boolean)">
             <summary>
-            Enables or disabled internal processing for this node. Internal processing happens in isolation from the normal [method _process] calls and is used by some nodes internally to guarantee proper functioning even if the node is paused or processing is disabled for scripting ([method set_process]). Only useful for advanced uses to manipulate built-in nodes behaviour.
+            Enables or disabled internal processing for this node. Internal processing happens in isolation from the normal [method]_process[/code] calls and is used by some nodes internally to guarantee proper functioning even if the node is paused or processing is disabled for scripting ([method set_process]). Only useful for advanced uses to manipulate built-in nodes behaviour.
             </summary>
         </member>
         <member name="M:Godot.Node.IsProcessingInternal">
@@ -14080,7 +13451,7 @@
         </member>
         <member name="M:Godot.Node.SetPhysicsProcessInternal(System.Boolean)">
             <summary>
-            Enables or disables internal physics for this node. Internal physics processing happens in isolation from the normal [method _physics_process] calls and is used by some nodes internally to guarantee proper functioning even if the node is paused or physics processing is disabled for scripting ([method set_physics_process]). Only useful for advanced uses to manipulate built-in nodes behaviour.
+            Enables or disables internal physics for this node. Internal physics processing happens in isolation from the normal [method]_physics_process[/code] calls and is used by some nodes internally to guarantee proper functioning even if the node is paused or physics processing is disabled for scripting ([method set_physics_process]). Only useful for advanced uses to manipulate built-in nodes behaviour.
             </summary>
         </member>
         <member name="M:Godot.Node.IsPhysicsProcessingInternal">
@@ -14144,14 +13515,14 @@
             Returns [code]true[/code] if the local system is the master of this node.
             </summary>
         </member>
-        <member name="M:Godot.Node.RpcConfig(System.String,Godot.MultiplayerAPI.RPCMode)">
+        <member name="M:Godot.Node.RpcConfig(System.String,Godot.Node.RPCMode)">
             <summary>
-            Changes the RPC mode for the given [code]method[/code] to the given [code]mode[/code]. See [enum MultiplayerAPI.RPCMode]. An alternative is annotating methods and properties with the corresponding keywords ([code]remote[/code], [code]sync[/code], [code]master[/code], [code]slave[/code]). By default, methods are not exposed to networking (and RPCs). Also see [method rset] and [method rset_config] for properties.
+            Changes the RPC mode for the given [code]method[/code] to the given [code]mode[/code]. See [enum RPCMode]. An alternative is annotating methods and properties with the corresponding keywords ([code]remote[/code], [code]sync[/code], [code]master[/code], [code]slave[/code]). By default, methods are not exposed to networking (and RPCs). Also see [method rset] and [method rset_config] for properties.
             </summary>
         </member>
-        <member name="M:Godot.Node.RsetConfig(System.String,Godot.MultiplayerAPI.RPCMode)">
+        <member name="M:Godot.Node.RsetConfig(System.String,Godot.Node.RPCMode)">
             <summary>
-            Changes the RPC mode for the given [code]property[/code] to the given [code]mode[/code]. See [enum MultiplayerAPI.RPCMode]. An alternative is annotating methods and properties with the corresponding keywords ([code]remote[/code], [code]sync[/code], [code]master[/code], [code]slave[/code]). By default, properties are not exposed to networking (and RPCs). Also see [method rpc] and [method rpc_config] for methods.
+            Changes the RPC mode for the given [code]property[/code] to the given [code]mode[/code]. See [enum RPCMode]. An alternative is annotating methods and properties with the corresponding keywords ([code]remote[/code], [code]sync[/code], [code]master[/code], [code]slave[/code]). By default, properties are not exposed to networking (and RPCs). Also see [method rpc] and [method rpc_config] for methods.
             </summary>
         </member>
         <member name="M:Godot.Node.Rpc(System.String,System.Object[])">
@@ -14166,12 +13537,12 @@
         </member>
         <member name="M:Godot.Node.RpcId(System.Int32,System.String,System.Object[])">
             <summary>
-            Sends a [method rpc] to a specific peer identified by [code]peer_id[/code] (see [method NetworkedMultiplayerPeer.set_target_peer]). Returns an empty [Variant].
+            Sends a [method rpc] to a specific peer identified by [code]peer_id[/code]. Returns an empty [Variant].
             </summary>
         </member>
         <member name="M:Godot.Node.RpcUnreliableId(System.Int32,System.String,System.Object[])">
             <summary>
-            Sends a [method rpc] to a specific peer identified by [code]peer_id[/code] using an unreliable protocol (see [method NetworkedMultiplayerPeer.set_target_peer]). Returns an empty [Variant].
+            Sends a [method rpc] to a specific peer identified by [code]peer_id[/code] using an unreliable protocol. Returns an empty [Variant].
             </summary>
         </member>
         <member name="M:Godot.Node.Rset(System.String,System.Object)">
@@ -14181,7 +13552,7 @@
         </member>
         <member name="M:Godot.Node.RsetId(System.Int32,System.String,System.Object)">
             <summary>
-            Remotely changes the property's value on a specific peer identified by [code]peer_id[/code] (see [method NetworkedMultiplayerPeer.set_target_peer]).
+            Remotely changes the property's value on a specific peer identified by [code]peer_id[/code].
             </summary>
         </member>
         <member name="M:Godot.Node.RsetUnreliable(System.String,System.Object)">
@@ -14191,7 +13562,7 @@
         </member>
         <member name="M:Godot.Node.RsetUnreliableId(System.Int32,System.String,System.Object)">
             <summary>
-            Remotely changes property's value on a specific peer identified by [code]peer_id[/code] using an unreliable protocol (see [method NetworkedMultiplayerPeer.set_target_peer]).
+            Remotely changes property's value on a specific peer identified by [code]peer_id[/code] using an unreliable protocol.
             </summary>
         </member>
         <member name="T:Godot.Node2D">
@@ -14679,44 +14050,6 @@
             Return the [PopupMenu] contained in this button.
             </summary>
         </member>
-        <member name="T:Godot.OrientedPathFollow">
-            <summary>
-            This node behaves like [PathFollow], except it uses its parent [Path] up vector information to enforce orientation.
-            Make sure to check if the curve of this node's parent [Path] has up vectors enabled. See [PathFollow] and [Curve3D] for further information.
-            </summary>
-        </member>
-        <member name="P:Godot.OrientedPathFollow.Offset">
-            <summary>
-            The distance from the first vertex, measured in 3D units along the path. This sets this node's position to a point within the path.
-            </summary>
-        </member>
-        <member name="P:Godot.OrientedPathFollow.UnitOffset">
-            <summary>
-            The distance from the first vertex, considering 0.0 as the first vertex and 1.0 as the last. This is just another way of expressing the offset within the path, as the offset supplied is multiplied internally by the path's length.
-            </summary>
-        </member>
-        <member name="P:Godot.OrientedPathFollow.HOffset">
-            <summary>
-            The node's offset along the curve.
-            </summary>
-        </member>
-        <member name="P:Godot.OrientedPathFollow.VOffset">
-            <summary>
-            The node's offset perpendicular to the curve.
-            </summary>
-        </member>
-        <member name="P:Godot.OrientedPathFollow.CubicInterp">
-            <summary>
-            If [code]true[/code] the position between two cached points is interpolated cubically, and linearly otherwise.
-            The points along the [Curve3D] of the [Path] are precomputed before use, for faster calculations. The point at the requested offset is then calculated interpolating between two adjacent cached points. This may present a problem if the curve makes sharp turns, as the cached points may not follow the curve closely enough.
-            There are two answers to this problem: Either increase the number of cached points and increase memory consumption, or make a cubic interpolation between two points at the cost of (slightly) slower calculations.
-            </summary>
-        </member>
-        <member name="P:Godot.OrientedPathFollow.Loop">
-            <summary>
-            If [code]true[/code], any offset outside the path's length will wrap around, instead of stopping at the ends. Use it for cyclic paths.
-            </summary>
-        </member>
         <member name="T:Godot.OS">
             <summary>
             Operating System functions. OS Wraps the most common functionality to communicate with the host Operating System, such as: mouse grabbing, mouse cursors, clipboard, video mode, date and time, timers, environment variables, execution of binaries, command line, etc.
@@ -14762,10 +14095,6 @@
             If [code]true[/code] removes the window frame.
             </summary>
         </member>
-        <member name="P:Godot.OS.WindowPerPixelTransparencyEnabled">
-            <summary>
-            </summary>
-        </member>
         <member name="P:Godot.OS.WindowFullscreen">
             <summary>
             If [code]true[/code] the window is fullscreen.
@@ -14794,24 +14123,6 @@
         <member name="P:Godot.OS.WindowSize">
             <summary>
             The size of the window (without counting window manager decorations).
-            </summary>
-        </member>
-        <member name="M:Godot.OS.GetVideoDriverCount">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.OS.GetVideoDriverName(System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.OS.GetAudioDriverCount">
-            <summary>
-            Returns the total number of available audio drivers.
-            </summary>
-        </member>
-        <member name="M:Godot.OS.GetAudioDriverName(System.Int32)">
-            <summary>
-            Returns the audio driver name for the given index.
             </summary>
         </member>
         <member name="M:Godot.OS.GetScreenCount">
@@ -14896,32 +14207,24 @@
         </member>
         <member name="M:Godot.OS.Execute(System.String,System.String[],System.Boolean,System.Object[])">
             <summary>
-            Execute the file at the given path with the arguments passed as an array of strings. Platform path resolution will take place. The resolved file must exist and be executable.
-            The arguments are used in the given order and separated by a space, so [code]OS.execute('ping', ['-c', '3', 'godotengine.org'])[/code] will resolve to [code]ping -c 3 godotengine.org[/code] in the system's shell.
-            This method has slightly different behaviour based on whether the [code]blocking[/code] mode is enabled.
-            When [code]blocking[/code] is enabled, the Godot thread will pause its execution while waiting for the process to terminate. The shell output of the process will be written to the [code]output[/code] array as a single string. When the process terminates, the Godot thread will resume execution.
-            When [code]blocking[/code] is disabled, the Godot thread will continue while the new process runs. It is not possible to retrieve the shell output in non-blocking mode, so [code]output[/code] will be empty.
-            The return value also depends on the blocking mode. When blocking, the method will return -2 (no process ID information is available in blocking mode). When non-blocking, the method returns a process ID, which you can use to monitor the process (and potentially terminate it with [method kill]). If the process forking (non-blocking) or opening (blocking) fails, the method will return -1.
-            Example of blocking mode and retrieving the shell output:
+            Execute the file at the given path, optionally blocking until it returns.
+            Platform path resolution will take place.  The resolved file must exist and be executable.
+            Returns a process id.
+            For example:
             [codeblock]
             var output = []
-            OS.execute('ls', ['-l', '/tmp'], true, output)
+            var pid = OS.execute('ls', [], true, output)
             [/codeblock]
-            Example of non-blocking mode, running another instance of the project and storing its process ID:
+            If you wish to access a shell built-in or perform a composite command, a platform specific shell can be invoked.  For example:
             [codeblock]
-            var pid = OS.execute(OS.get_executable_path(), [], false)
-            [/codeblock]
-            If you wish to access a shell built-in or perform a composite command, a platform-specific shell can be invoked. For example:
-            [codeblock]
-            OS.execute('CMD.exe', ['/C', 'cd %TEMP% &amp;&amp; dir'], true, output)
+            var pid = OS.execute('CMD.exe', ['/C', 'cd %TEMP% &amp;&amp; dir'], true, output)
             [/codeblock]
             &lt;param name="output"&gt;If the param is null, then the default value is new object[] {}&lt;/param&gt;
             </summary>
         </member>
         <member name="M:Godot.OS.Kill(System.Int32)">
             <summary>
-            Kill (terminate) the process identified by the given process ID ([code]pid[/code]), e.g. the one returned by [method execute] in non-blocking mode.
-            Note that this method can also be used to kill processes that were not spawned by the game.
+            Kill a process ID (this method can be used to kill processes that were not spawned by the game).
             </summary>
         </member>
         <member name="M:Godot.OS.ShellOpen(System.String)">
@@ -15017,11 +14320,6 @@
         <member name="M:Godot.OS.GetTicksMsec">
             <summary>
             Returns the amount of time passed in milliseconds since the engine started.
-            </summary>
-        </member>
-        <member name="M:Godot.OS.GetTicksUsec">
-            <summary>
-            Returns the amount of time passed in microseconds since the engine started.
             </summary>
         </member>
         <member name="M:Godot.OS.GetSplashTickMsec">
@@ -15145,8 +14443,7 @@
         </member>
         <member name="M:Godot.OS.GetUniqueId">
             <summary>
-            Returns a string that is unique to the device.
-            Returns empty string on HTML5 and UWP which are not supported yet.
+            Returns a string that is unique to the device. Currently only works on Android and iOS. Returns empty string on other platforms.
             </summary>
         </member>
         <member name="M:Godot.OS.IsOkLeftAndCancelRight">
@@ -16093,50 +15390,6 @@
             <summary>
             </summary>
         </member>
-        <member name="P:Godot.PhysicalBone.JointType">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.PhysicalBone.JointOffset">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.PhysicalBone.BodyOffset">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.PhysicalBone.Mass">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.PhysicalBone.Weight">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.PhysicalBone.Friction">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.PhysicalBone.Bounce">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.PhysicalBone.GravityScale">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.PhysicalBone.IsStaticBody">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.PhysicalBone.GetSimulatePhysics">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.PhysicalBone.IsSimulatingPhysics">
-            <summary>
-            </summary>
-        </member>
         <member name="T:Godot.Physics2DDirectBodyState">
             <summary>
             Direct access object to a physics body in the [Physics2DServer]. This object is passed via the direct state callback of rigid/character bodies, and is intended for changing the direct state of that body.
@@ -16527,14 +15780,6 @@
             5: The shape index of the area where the object entered/exited.
             </summary>
         </member>
-        <member name="M:Godot.Physics2DServer.AreaSetAreaMonitorCallback(Godot.RID,Godot.Object,System.String)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Physics2DServer.AreaSetMonitorable(Godot.RID,System.Boolean)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.Physics2DServer.BodyCreate">
             <summary>
             Creates a physics body. The first parameter can be any value from constants BODY_MODE*, for the type of body created. Additionally, the body can be created in sleeping state to save processing time.
@@ -16732,7 +15977,7 @@
             Sets the function used to calculate physics for an object, if that object allows it (see [method body_set_omit_force_integration]).
             </summary>
         </member>
-        <member name="M:Godot.Physics2DServer.BodyTestMotion(Godot.RID,Godot.Transform2D,Godot.Vector2,System.Boolean,System.Single,Godot.Physics2DTestMotionResult)">
+        <member name="M:Godot.Physics2DServer.BodyTestMotion(Godot.RID,Godot.Transform2D,Godot.Vector2,System.Single,Godot.Physics2DTestMotionResult)">
             <summary>
             Returns whether a body can move from a given point in a given direction. Apart from the boolean return value, a [Physics2DTestMotionResult] can be passed to return additional information in.
             </summary>
@@ -17050,20 +16295,17 @@
             The transformation matrix of the body.
             </summary>
         </member>
-        <member name="M:Godot.PhysicsDirectBodyState.AddCentralForce(Godot.Vector3)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.PhysicsDirectBodyState.AddForce(Godot.Vector3,Godot.Vector3)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.PhysicsDirectBodyState.AddTorque(Godot.Vector3)">
             <summary>
             </summary>
         </member>
         <member name="M:Godot.PhysicsDirectBodyState.ApplyImpulse(Godot.Vector3,Godot.Vector3)">
             <summary>
+            </summary>
+        </member>
+        <member name="M:Godot.PhysicsDirectBodyState.ApplyTorqeImpulse(Godot.Vector3)">
+            <summary>
+            This method is deprecated. Please use [method apply_torque_impulse] instead.
             </summary>
         </member>
         <member name="M:Godot.PhysicsDirectBodyState.ApplyTorqueImpulse(Godot.Vector3)">
@@ -17339,14 +16581,6 @@
             3: Instance ID of the object that entered/exited the area.
             4: The shape index of the object that entered/exited the area.
             5: The shape index of the area where the object entered/exited.
-            </summary>
-        </member>
-        <member name="M:Godot.PhysicsServer.AreaSetAreaMonitorCallback(Godot.RID,Godot.Object,System.String)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.PhysicsServer.AreaSetMonitorable(Godot.RID,System.Boolean)">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.PhysicsServer.AreaSetRayPickable(Godot.RID,System.Boolean)">
@@ -17829,10 +17063,6 @@
             Texture coordinates for each vertex of the polygon. There should be one [code]uv[/code] per polygon vertex. If there are fewer, undefined vertices will use [code](0, 0)[/code].
             </summary>
         </member>
-        <member name="P:Godot.Polygon2D.Splits">
-            <summary>
-            </summary>
-        </member>
         <member name="P:Godot.Polygon2D.Color">
             <summary>
             The polygon's fill color. If [code]texture[/code] is defined, it will be multiplied by this color. It will also be the default color for vertices not set in [code]vertex_colors[/code].
@@ -17878,10 +17108,6 @@
             The texture's rotation in radians.
             </summary>
         </member>
-        <member name="P:Godot.Polygon2D.Skeleton">
-            <summary>
-            </summary>
-        </member>
         <member name="P:Godot.Polygon2D.InvertEnable">
             <summary>
             If [code]true[/code] polygon will be inverted, containing the area outside the defined points and extending to the [code]invert_border[/code]. Default value: [code]false[/code].
@@ -17890,42 +17116,6 @@
         <member name="P:Godot.Polygon2D.InvertBorder">
             <summary>
             Added padding applied to the bounding box when using [code]invert[/code]. Setting this value too small may result in a "Bad Polygon" error. Default value: [code]100[/code].
-            </summary>
-        </member>
-        <member name="P:Godot.Polygon2D.Bones">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Polygon2D.AddBone(Godot.NodePath,System.Single[])">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Polygon2D.GetBoneCount">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Polygon2D.GetBonePath(System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Polygon2D.GetBoneWeights(System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Polygon2D.EraseBone(System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Polygon2D.ClearBones">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Polygon2D.SetBonePath(System.Int32,Godot.NodePath)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Polygon2D.SetBoneWeights(System.Int32,System.Single[])">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.PolygonPathFinder.Setup(Godot.Vector2[],System.Int32[])">
@@ -18133,10 +17323,6 @@
             <summary>
             </summary>
         </member>
-        <member name="M:Godot.PopupMenu.SetItemShortcutDisabled(System.Int32,System.Boolean)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.PopupMenu.ToggleItemChecked(System.Int32)">
             <summary>
             </summary>
@@ -18205,10 +17391,6 @@
             Return whether the item at index "idx" has radio-button-style checkability. Remember this is just cosmetic and you have to add the logic for checking/unchecking items in radio groups.
             </summary>
         </member>
-        <member name="M:Godot.PopupMenu.IsItemShortcutDisabled(System.Int32)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.PopupMenu.GetItemTooltip(System.Int32)">
             <summary>
             </summary>
@@ -18266,10 +17448,6 @@
             <summary>
             </summary>
         </member>
-        <member name="P:Godot.PrimitiveMesh.FlipFaces">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.PrimitiveMesh.GetMeshArrays">
             <summary>
             </summary>
@@ -18281,7 +17459,7 @@
         </member>
         <member name="P:Godot.PrismMesh.LeftToRight">
             <summary>
-            Displacement of the upper edge along the x-axis. 0.0 positions edge straight above the bottome left edge. Defaults to 0.5 (positioned on the midpoint).
+            Displacement of of the upper edge along the x-axis. 0.0 positions edge straight above the bottome left edge. Defaults to 0.5 (positioned on the midpoint).
             </summary>
         </member>
         <member name="P:Godot.PrismMesh.Size">
@@ -18561,14 +17739,6 @@
             If [code]true[/code], [code]value[/code] will always be rounded to the nearest integer.
             </summary>
         </member>
-        <member name="P:Godot.Range.AllowGreater">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.Range.AllowLesser">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.Range.Share(Godot.Node)">
             <summary>
             Binds two Ranges together along with any Ranges previously grouped with either of them. When any of Range's member variables change, it will share the new value with all other Ranges in its group.
@@ -18796,11 +17966,6 @@
             The ray's length.
             </summary>
         </member>
-        <member name="P:Godot.RayShape.SlipsOnSlope">
-            <summary>
-            If [code]true[/code] allow the shape to return the correct normal. Default value: [code]false[/code].
-            </summary>
-        </member>
         <member name="T:Godot.RayShape2D">
             <summary>
             Ray shape for 2D collisions. A ray is not really a collision body, instead it tries to separate itself from whatever is touching its far endpoint. It's often useful for characters.
@@ -18809,11 +17974,6 @@
         <member name="P:Godot.RayShape2D.Length">
             <summary>
             The ray's length.
-            </summary>
-        </member>
-        <member name="P:Godot.RayShape2D.SlipsOnSlope">
-            <summary>
-            If [code]true[/code] allow the shape to return the correct normal. Default value: [code]false[/code].
             </summary>
         </member>
         <member name="T:Godot.RectangleShape2D">
@@ -19418,11 +18578,6 @@
             Returns the number of visible lines.
             </summary>
         </member>
-        <member name="M:Godot.RichTextLabel.GetContentHeight">
-            <summary>
-            Returns the height of the content.
-            </summary>
-        </member>
         <member name="T:Godot.RigidBody">
             <summary>
             This is the node that implements full 3D physics. This means that you do not control a RigidBody directly. Instead you can apply forces to it (gravity, impulses, etc.), and the physics simulation will calculate the resulting movement, collision, bouncing, rotating, etc.
@@ -19549,11 +18704,6 @@
         <member name="M:Godot.RigidBody.ApplyImpulse(Godot.Vector3,Godot.Vector3)">
             <summary>
             Apply a positioned impulse (which will be affected by the body mass and shape). This is the equivalent of hitting a billiard ball with a cue: a force that is applied once, and only once. Both the impulse and the position are in global coordinates, and the position is relative to the object's origin.
-            </summary>
-        </member>
-        <member name="M:Godot.RigidBody.ApplyTorqueImpulse(Godot.Vector3)">
-            <summary>
-            Apply a torque impulse (which will be affected by the body mass and shape). This will rotate the body around the passed in vector.
             </summary>
         </member>
         <member name="M:Godot.RigidBody.GetCollidingBodies">
@@ -19685,7 +18835,7 @@
             Adds a positioned force to the body. Both the force and the offset from the body origin are in global coordinates.
             </summary>
         </member>
-        <member name="M:Godot.RigidBody2D.TestMotion(Godot.Vector2,System.Boolean,System.Single,Godot.Physics2DTestMotionResult)">
+        <member name="M:Godot.RigidBody2D.TestMotion(Godot.Vector2,System.Single,Godot.Physics2DTestMotionResult)">
             <summary>
             Returns [code]true[/code] if a collision would result from moving in the given vector. [code]margin[/code] increases the size of the shapes involved in the collision detection, and [code]result[/code] is an object of type [Physics2DTestMotionResult], which contains additional information about the collision (should there be one).
             </summary>
@@ -19845,17 +18995,6 @@
         <member name="P:Godot.SceneTree.Root">
             <summary>
             The SceneTree's [Viewport].
-            </summary>
-        </member>
-        <member name="P:Godot.SceneTree.Multiplayer">
-            <summary>
-            The default [MultiplayerAPI] instance for this SceneTree.
-            </summary>
-        </member>
-        <member name="P:Godot.SceneTree.MultiplayerPoll">
-            <summary>
-            If [code]true[/code] (default) enable the automatic polling of the [MultiplayerAPI] for this SceneTree during [signal idle_frame].
-            When [code]false[/code] you need to manually call [method MultiplayerAPI.poll] for processing network packets and delivering RPCs/RSETs. This allows to run RPCs/RSETs in a different loop (e.g. physics, thread, specific time step) and for manual [Mutex] protecion when accessing the [MultiplayerAPI] from threads.
             </summary>
         </member>
         <member name="M:Godot.SceneTree.HasGroup(System.String)">
@@ -20072,18 +19211,10 @@
         </member>
         <member name="P:Godot.ScrollContainer.ScrollVertical">
             <summary>
-            The current vertical scroll value.
+            The current horizontal scroll value.
             </summary>
         </member>
         <member name="P:Godot.ScrollContainer.ScrollDeadzone">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.ScrollContainer.GetHScrollbar">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.ScrollContainer.GetVScrollbar">
             <summary>
             </summary>
         </member>
@@ -20155,17 +19286,17 @@
         </member>
         <member name="P:Godot.ShaderMaterial.Shader">
             <summary>
-            The [Shader] program used to render this material.
+            The [Shader] program used to render this material
             </summary>
         </member>
         <member name="M:Godot.ShaderMaterial.SetShaderParam(System.String,System.Object)">
             <summary>
-            Changes the value set for this material of a uniform in the shader.
+            Changes the value set for this material of a uniform in the shader
             </summary>
         </member>
         <member name="M:Godot.ShaderMaterial.GetShaderParam(System.String)">
             <summary>
-            Returns the current value set for this material of a uniform in the shader.
+            Returns the current value set for this material of a uniform in the shader
             </summary>
         </member>
         <member name="T:Godot.Shape">
@@ -20343,35 +19474,6 @@
         <member name="M:Godot.Skeleton.GetBoneTransform(System.Int32)">
             <summary>
             Return the combination of custom pose and pose. The returned transform is in skeleton's reference frame.
-            </summary>
-        </member>
-        <member name="M:Godot.Skeleton.PhysicalBonesStopSimulation">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Skeleton.PhysicalBonesStartSimulation(System.Object[])">
-            <summary>
-            &lt;param name="bones"&gt;If the param is null, then the default value is new object[] {}&lt;/param&gt;
-            </summary>
-        </member>
-        <member name="M:Godot.Skeleton.PhysicalBonesAddCollisionException(Godot.RID)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Skeleton.PhysicalBonesRemoveCollisionException(Godot.RID)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Skeleton2D.GetBoneCount">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Skeleton2D.GetBone(System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Skeleton2D.GetSkeleton">
-            <summary>
             </summary>
         </member>
         <member name="T:Godot.Sky">
@@ -20751,10 +19853,6 @@
             </summary>
         </member>
         <member name="P:Godot.SpatialMaterial.FlagsAlbedoTexForceSrgb">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.SpatialMaterial.FlagsDoNotReceiveShadows">
             <summary>
             </summary>
         </member>
@@ -21283,11 +20381,6 @@
             If [code]true[/code] the outermost pixels get blurred out.
             </summary>
         </member>
-        <member name="M:Godot.Sprite.GetRect">
-            <summary>
-            Returns a Rect2 representing the Sprite's boundary relative to its local coordinates.
-            </summary>
-        </member>
         <member name="T:Godot.Sprite3D">
             <summary>
             A node that displays a 2D texture in a 3D environment. The texture displayed can be a region from a larger atlas texture, or a frame from a sprite sheet animation.
@@ -21391,10 +20484,6 @@
             <summary>
             </summary>
         </member>
-        <member name="M:Godot.SpriteBase3D.GenerateTriangleMesh">
-            <summary>
-            </summary>
-        </member>
         <member name="T:Godot.SpriteFrames">
             <summary>
             Sprite frame library for [AnimatedSprite]. Contains frames and animation data for playback.
@@ -21406,7 +20495,7 @@
         </member>
         <member name="M:Godot.SpriteFrames.AddAnimation(System.String)">
             <summary>
-            Adds a new animation to the library.
+            Adds a new animation to the the library.
             </summary>
         </member>
         <member name="M:Godot.SpriteFrames.HasAnimation(System.String)">
@@ -21723,11 +20812,6 @@
         <member name="T:Godot.StreamPeerSSL">
             <summary>
             SSL Stream peer. This object can be used to connect to SSL servers.
-            </summary>
-        </member>
-        <member name="M:Godot.StreamPeerSSL.Poll">
-            <summary>
-            Poll the connection to check for incoming bytes. Call this right before "get_available_bytes()" for it to work properly.
             </summary>
         </member>
         <member name="M:Godot.StreamPeerSSL.AcceptStream(Godot.StreamPeer)">
@@ -22183,10 +21267,9 @@
             Removes index array by expanding Vertex array.
             </summary>
         </member>
-        <member name="M:Godot.SurfaceTool.GenerateNormals(System.Boolean)">
+        <member name="M:Godot.SurfaceTool.GenerateNormals">
             <summary>
             Generates normals from Vertices so you do not have to do it manually.
-            Setting "flip" [code]true[/code] inverts resulting normals.
             </summary>
         </member>
         <member name="M:Godot.SurfaceTool.GenerateTangents">
@@ -22241,10 +21324,6 @@
         <member name="P:Godot.TabContainer.TabsVisible">
             <summary>
             If [code]true[/code] tabs are visible. If [code]false[/code] tabs' content and titles are hidden. Default value: [code]true[/code].
-            </summary>
-        </member>
-        <member name="P:Godot.TabContainer.DragToRearrangeEnabled">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.TabContainer.GetTabCount">
@@ -22307,14 +21386,6 @@
             Returns the [Popup] node instance if one has been set already with [method set_popup].
             </summary>
         </member>
-        <member name="M:Godot.TabContainer.SetTabsRearrangeGroup(System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.TabContainer.GetTabsRearrangeGroup">
-            <summary>
-            </summary>
-        </member>
         <member name="T:Godot.Tabs">
             <summary>
             Simple tabs control, similar to [TabContainer] but is only in charge of drawing tabs, not interact with children.
@@ -22333,10 +21404,6 @@
             </summary>
         </member>
         <member name="P:Godot.Tabs.ScrollingEnabled">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.Tabs.DragToRearrangeEnabled">
             <summary>
             </summary>
         </member>
@@ -22398,14 +21465,6 @@
             Rearrange tab.
             </summary>
         </member>
-        <member name="M:Godot.Tabs.SetTabsRearrangeGroup(System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.Tabs.GetTabsRearrangeGroup">
-            <summary>
-            </summary>
-        </member>
         <member name="T:Godot.TCP_Server">
             <summary>
             TCP Server class. Listens to connections on a port and returns a [StreamPeerTCP] when got a connection.
@@ -22463,11 +21522,6 @@
             If [code]true[/code] line numbers are displayed to the left of the text.
             </summary>
         </member>
-        <member name="P:Godot.TextEdit.BreakpointGutter">
-            <summary>
-            If [code]true[/code] the breakpoint gutter is visible.
-            </summary>
-        </member>
         <member name="P:Godot.TextEdit.HighlightAllOccurrences">
             <summary>
             </summary>
@@ -22494,7 +21548,7 @@
             <summary>
             </summary>
         </member>
-        <member name="P:Godot.TextEdit.WrapEnabled">
+        <member name="P:Godot.TextEdit.WrapLines">
             <summary>
             </summary>
         </member>
@@ -22539,7 +21593,7 @@
             <summary>
             </summary>
         </member>
-        <member name="M:Godot.TextEdit.CursorSetLine(System.Int32,System.Boolean,System.Boolean,System.Int32)">
+        <member name="M:Godot.TextEdit.CursorSetLine(System.Int32,System.Boolean,System.Boolean)">
             <summary>
             </summary>
         </member>
@@ -22679,14 +21733,6 @@
             Add a keyword and its color.
             </summary>
         </member>
-        <member name="M:Godot.TextEdit.HasKeywordColor(System.String)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.TextEdit.GetKeywordColor(System.String)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.TextEdit.AddColorRegion(System.String,System.String,Godot.Color,System.Boolean)">
             <summary>
             Add color region (given the delimiters) and its colors.
@@ -22703,16 +21749,6 @@
         </member>
         <member name="M:Godot.TextEdit.GetMenu">
             <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.TextEdit.GetBreakpoints">
-            <summary>
-            Return an array containing the line number of each breakpoint.
-            </summary>
-        </member>
-        <member name="M:Godot.TextEdit.RemoveBreakpoints">
-            <summary>
-            Removes all the breakpoints (without firing "breakpoint_toggled" signal).
             </summary>
         </member>
         <member name="T:Godot.Texture">
@@ -22833,18 +21869,6 @@
         <member name="P:Godot.TextureProgress.FillMode">
             <summary>
             The fill direction. Uses FILL_* constants.
-            </summary>
-        </member>
-        <member name="P:Godot.TextureProgress.TintUnder">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.TextureProgress.TintOver">
-            <summary>
-            </summary>
-        </member>
-        <member name="P:Godot.TextureProgress.TintProgress">
-            <summary>
             </summary>
         </member>
         <member name="P:Godot.TextureProgress.RadialInitialAngle">
@@ -23234,11 +22258,6 @@
             Returns [code]true[/code] if the given cell is transposed, i.e. the x and y axes are swapped.
             </summary>
         </member>
-        <member name="M:Godot.TileMap.FixInvalidTiles">
-            <summary>
-            Clears cells that do not exist in the tileset.
-            </summary>
-        </member>
         <member name="M:Godot.TileMap.Clear">
             <summary>
             Clears all cells.
@@ -23411,14 +22430,6 @@
             Return the array of shapes of the tile.
             </summary>
         </member>
-        <member name="M:Godot.TileSet.TileSetTileMode(System.Int32,Godot.TileSet.TileMode)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.TileSet.TileGetTileMode(System.Int32)">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.TileSet.TileSetNavigationPolygon(System.Int32,Godot.NavigationPolygon)">
             <summary>
             Set a navigation polygon for the tile.
@@ -23457,14 +22468,6 @@
         <member name="M:Godot.TileSet.TileGetOccluderOffset(System.Int32)">
             <summary>
             Return the offset of the tile's light occluder.
-            </summary>
-        </member>
-        <member name="M:Godot.TileSet.TileSetZIndex(System.Int32,System.Int32)">
-            <summary>
-            </summary>
-        </member>
-        <member name="M:Godot.TileSet.TileGetZIndex(System.Int32)">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.TileSet.RemoveTile(System.Int32)">
@@ -23527,9 +22530,9 @@
             The timer's remaining time in seconds. Returns 0 if the timer is inactive.
             </summary>
         </member>
-        <member name="M:Godot.Timer.Start(System.Single)">
+        <member name="M:Godot.Timer.Start">
             <summary>
-            Starts the timer. Sets [code]wait_time[/code] to [code]time_sec[/code] if [code]time_sec[/code] &gt; 0. This also resets the remaining time to [code]wait_time[/code].
+            Starts the timer. This also resets the remaining time to [code]wait_time[/code].
             Note: this method will not resume a paused timer. See [method set_paused].
             </summary>
         </member>
@@ -24179,10 +23182,6 @@
             Stops animating all tweens.
             </summary>
         </member>
-        <member name="M:Godot.Tween.IsStopped">
-            <summary>
-            </summary>
-        </member>
         <member name="M:Godot.Tween.Resume(Godot.Object,System.String)">
             <summary>
             Continues animating a stopped tween, given its object and property/method pair. By default, all tweens are resumed, unless [code]key[/code] is specified.
@@ -24330,141 +23329,6 @@
         </member>
         <member name="M:Godot.UndoRedo.Undo">
             <summary>
-            </summary>
-        </member>
-        <member name="T:Godot.UPNP">
-            <summary>
-            Provides UPNP functionality to discover [UPNPDevice]s on the local network and execute commands on them, like managing port mappings (port forwarding) and querying the local and remote network IP address. Note that methods on this class are synchronous and block the calling thread.
-            </summary>
-        </member>
-        <member name="P:Godot.UPNP.DiscoverMulticastIf">
-            <summary>
-            Multicast interface to use for discovery. Uses the default multicast interface if empty.
-            </summary>
-        </member>
-        <member name="P:Godot.UPNP.DiscoverLocalPort">
-            <summary>
-            If [code]0[/code], the local port to use for discovery is chosen automatically by the system. If [code]1[/code], discovery will be done from the source port 1900 (same as destination port). Otherwise, the value will be used as the port.
-            </summary>
-        </member>
-        <member name="P:Godot.UPNP.DiscoverIpv6">
-            <summary>
-            If [code]true[/code], IPv6 is used for [UPNPDevice] discovery.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.GetDeviceCount">
-            <summary>
-            Returns the number of discovered [UPNPDevice]s.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.GetDevice(System.Int32)">
-            <summary>
-            Returns the [UPNPDevice] at the given [code]index[/code].
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.AddDevice(Godot.UPNPDevice)">
-            <summary>
-            Adds the given [UPNPDevice] to the list of discovered devices.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.SetDevice(System.Int32,Godot.UPNPDevice)">
-            <summary>
-            Sets the device at [code]index[/code] from the list of discovered devices to [code]device[/code].
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.RemoveDevice(System.Int32)">
-            <summary>
-            Removes the device at [code]index[/code] from the list of discovered devices.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.ClearDevices">
-            <summary>
-            Clears the list of discovered devices.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.GetGateway">
-            <summary>
-            Returns the default gateway. That is the first discovered [UPNPDevice] that is also a valid IGD (InternetGatewayDevice).
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.Discover(System.Int32,System.Int32,System.String)">
-            <summary>
-            Discovers local [UPNPDevice]s. Clears the list of previously discovered devices.
-            Filters for IGD (InternetGatewayDevice) type devices by default, as those manage port forwarding. [code]timeout[/code] is the time to wait for responses in miliseconds. [code]ttl[/code] is the time-to-live; only touch this if you know what you're doing.
-            See [enum UPNPResult] for possible return values.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.QueryExternalAddress">
-            <summary>
-            Returns the external [IP] address of the default gateway (see [method get_gateway]) as string. Returns an empty string on error.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.AddPortMapping(System.Int32,System.Int32,System.String,System.String,System.Int32)">
-            <summary>
-            Adds a mapping to forward the external [code]port[/code] (between 1 and 65535) on the default gateway (see [method get_gateway]) to the [code]internal_port[/code] on the local machine for the given protocol [code]proto[/code] (either [code]TCP[/code] or [code]UDP[/code], with UDP being the default). If a port mapping for the given port and protocol combination already exists on that gateway device, this method tries to overwrite it. If that is not desired, you can retrieve the gateway manually with [method get_gateway] and call [method add_port_mapping] on it, if any.
-            If [code]internal_port[/code] is [code]0[/code] (the default), the same port number is used for both the external and the internal port (the [code]port[/code] value).
-            The description ([code]desc[/code]) is shown in some router UIs and can be used to point out which application added the mapping, and the lifetime of the mapping can be limited by [code]duration[/code]. However, some routers are incompatible with one or both of these, so use with caution and add fallback logic in case of errors to retry without them if in doubt.
-            See [enum UPNPResult] for possible return values.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNP.DeletePortMapping(System.Int32,System.String)">
-            <summary>
-            Deletes the port mapping for the given port and protocol combination on the default gateway (see [method get_gateway]) if one exists. [code]port[/code] must be a valid port between 1 and 65535, [code]proto[/code] can be either [code]TCP[/code] or [code]UDP[/code]. See [enum UPNPResult] for possible return values.
-            </summary>
-        </member>
-        <member name="T:Godot.UPNPDevice">
-            <summary>
-            UPNP device. See [UPNP] for UPNP discovery and utility functions. Provides low-level access to UPNP control commands. Allows to manage port mappings (port forwarding) and to query network information of the device (like local and external IP address and status). Note that methods on this class are synchronous and block the calling thread.
-            </summary>
-        </member>
-        <member name="P:Godot.UPNPDevice.DescriptionUrl">
-            <summary>
-            URL to the device description.
-            </summary>
-        </member>
-        <member name="P:Godot.UPNPDevice.ServiceType">
-            <summary>
-            Service type.
-            </summary>
-        </member>
-        <member name="P:Godot.UPNPDevice.IgdControlUrl">
-            <summary>
-            IDG control URL.
-            </summary>
-        </member>
-        <member name="P:Godot.UPNPDevice.IgdServiceType">
-            <summary>
-            IGD service type.
-            </summary>
-        </member>
-        <member name="P:Godot.UPNPDevice.IgdOurAddr">
-            <summary>
-            Address of the local machine in the network connecting it to this [UPNPDevice].
-            </summary>
-        </member>
-        <member name="P:Godot.UPNPDevice.IgdStatus">
-            <summary>
-            IGD status. See [enum IGDStatus].
-            </summary>
-        </member>
-        <member name="M:Godot.UPNPDevice.IsValidGateway">
-            <summary>
-            Returns [code]true[/code] if this is a valid IGD (InternetGatewayDevice) which potentially supports port forwarding.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNPDevice.QueryExternalAddress">
-            <summary>
-            Returns the external IP address of this [UPNPDevice] or an empty string.
-            </summary>
-        </member>
-        <member name="M:Godot.UPNPDevice.AddPortMapping(System.Int32,System.Int32,System.String,System.String,System.Int32)">
-            <summary>
-            Adds a port mapping to forward the given external port on this [UPNPDevice] for the given protocol to the local machine. See [method UPNP.add_port_mapping].
-            </summary>
-        </member>
-        <member name="M:Godot.UPNPDevice.DeletePortMapping(System.Int32,System.String)">
-            <summary>
-            Deletes the port mapping identified by the given port and protocol combination on this device. See [method UPNP.delete_port_mapping].
             </summary>
         </member>
         <member name="T:Godot.VBoxContainer">
@@ -24713,11 +23577,6 @@
         <member name="P:Godot.Viewport.Disable3d">
             <summary>
             If [code]true[/code] the viewport will disable 3D rendering. For actual disabling use [code]usage[/code]. Default value: [code]false[/code].
-            </summary>
-        </member>
-        <member name="P:Godot.Viewport.Keep3dLinear">
-            <summary>
-            If [code]true[/code] the result after 3D rendering will not have a linear to sRGB color conversion applied. This is important when the viewport is used as a render target where the result is used as a texture on a 3D object rendered in another viewport. It is also important if the viewport is used to create data that is not color based (noise, heightmaps, pickmaps, etc.). Do not enable this when the viewport is used as a texture on a 2D object or if the viewport is your final output.
             </summary>
         </member>
         <member name="P:Godot.Viewport.Usage">
@@ -25897,7 +24756,7 @@
         </member>
         <member name="M:Godot.VisualServer.ForceSync">
             <summary>
-            Synchronizes threads.
+            Syncronizes threads.
             </summary>
         </member>
         <member name="M:Godot.VisualServer.ForceDraw(System.Boolean)">
@@ -25932,10 +24791,6 @@
         <member name="M:Godot.VisualServer.TextureSetData(Godot.RID,Godot.Image,Godot.VisualServer.CubeMapSide)">
             <summary>
             Sets the texture's image data. If it's a CubeMap, it sets the image data at a cube side.
-            </summary>
-        </member>
-        <member name="M:Godot.VisualServer.TextureSetDataPartial(Godot.RID,Godot.Image,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,Godot.VisualServer.CubeMapSide)">
-            <summary>
             </summary>
         </member>
         <member name="M:Godot.VisualServer.TextureGetData(Godot.RID,Godot.VisualServer.CubeMapSide)">
@@ -26197,6 +25052,10 @@
         <member name="M:Godot.VisualServer.MeshClear(Godot.RID)">
             <summary>
             Removes all surfaces from a mesh.
+            </summary>
+        </member>
+        <member name="M:Godot.VisualServer.MultimeshAllocate(Godot.RID,System.Int32,Godot.VisualServer.MultimeshTransformFormat,Godot.VisualServer.MultimeshColorFormat)">
+            <summary>
             </summary>
         </member>
         <member name="M:Godot.VisualServer.MultimeshGetInstanceCount(Godot.RID)">
@@ -26899,6 +25758,10 @@
             <summary>
             </summary>
         </member>
+        <member name="M:Godot.VisualServer.EnvironmentSetSsao(Godot.RID,System.Boolean,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,Godot.Color,Godot.VisualServer.EnvironmentSSAOQuality,Godot.VisualServer.EnvironmentSSAOBlur,System.Single)">
+            <summary>
+            </summary>
+        </member>
         <member name="M:Godot.VisualServer.EnvironmentSetFog(Godot.RID,System.Boolean,Godot.Color,Godot.Color,System.Single)">
             <summary>
             </summary>
@@ -27152,25 +26015,24 @@
             &lt;param name="normalMap"&gt;If the param is null, then the default value is new RID()&lt;/param&gt;
             </summary>
         </member>
-        <member name="M:Godot.VisualServer.CanvasItemAddTriangleArray(Godot.RID,System.Int32[],Godot.Vector2[],Godot.Color[],Godot.Vector2[],System.Int32[],System.Single[],Godot.RID,System.Int32,Godot.RID)">
+        <member name="M:Godot.VisualServer.CanvasItemAddTriangleArray(Godot.RID,System.Int32[],Godot.Vector2[],Godot.Color[],Godot.Vector2[],Godot.RID,System.Int32,Godot.RID)">
             <summary>
+            Adds a triangle array to the [CanvasItem]'s draw commands.
             &lt;param name="uvs"&gt;If the param is null, then the default value is new Vector2[] {}&lt;/param&gt;
-            &lt;param name="bones"&gt;If the param is null, then the default value is new int[] {}&lt;/param&gt;
-            &lt;param name="weights"&gt;If the param is null, then the default value is new float[] {}&lt;/param&gt;
             &lt;param name="texture"&gt;If the param is null, then the default value is new RID()&lt;/param&gt;
             &lt;param name="normalMap"&gt;If the param is null, then the default value is new RID()&lt;/param&gt;
             </summary>
         </member>
-        <member name="M:Godot.VisualServer.CanvasItemAddMesh(Godot.RID,Godot.RID,Godot.RID,Godot.RID)">
+        <member name="M:Godot.VisualServer.CanvasItemAddMesh(Godot.RID,Godot.RID,Godot.RID)">
             <summary>
             Adds a [Mesh] to the [CanvasItem]'s draw commands. Only affects its aabb at the moment.
-            &lt;param name="normalMap"&gt;If the param is null, then the default value is new RID()&lt;/param&gt;
+            &lt;param name="skeleton"&gt;If the param is null, then the default value is new RID()&lt;/param&gt;
             </summary>
         </member>
-        <member name="M:Godot.VisualServer.CanvasItemAddMultimesh(Godot.RID,Godot.RID,Godot.RID,Godot.RID)">
+        <member name="M:Godot.VisualServer.CanvasItemAddMultimesh(Godot.RID,Godot.RID,Godot.RID)">
             <summary>
             Adds a [MultiMesh] to the [CanvasItem]'s draw commands. Only affects its aabb at the moment.
-            &lt;param name="normalMap"&gt;If the param is null, then the default value is new RID()&lt;/param&gt;
+            &lt;param name="skeleton"&gt;If the param is null, then the default value is new RID()&lt;/param&gt;
             </summary>
         </member>
         <member name="M:Godot.VisualServer.CanvasItemAddParticles(Godot.RID,Godot.RID,Godot.RID,Godot.RID,System.Int32,System.Int32)">
@@ -27486,127 +26348,6 @@
         <member name="M:Godot.WeakRef.GetRef">
             <summary>
             Returns the [Object] this weakref is referring to.
-            </summary>
-        </member>
-        <member name="T:Godot.WebSocketClient">
-            <summary>
-            This class implements a WebSocket client compatible with any RFC 6455 complaint WebSocket server.
-            This client can be optionally used as a network peer for the [MultiplayerAPI].
-            After starting the client ([method connect_to_url]), you will need to [method NetworkedMultiplayerPeer.poll] it at regular intervals (e.g. inside [method Node._process]).
-            You will received appropriate signals when connecting, disconnecting, or when new data is available.
-            </summary>
-        </member>
-        <member name="P:Godot.WebSocketClient.VerifySsl">
-            <summary>
-            Enable or disable SSL certificate verification. Note: You must specify the certificates to be used in the project settings for it to work when exported.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketClient.ConnectToUrl(System.String,System.String[],System.Boolean)">
-            <summary>
-            Connect to the given URL requesting one of the given [code]protocols[/code] as sub-protocol.
-            If [code]true[/code] is passed as [code]gd_mp_api[/code], the client will behave like a network peer for the [MultiplayerAPI]. Note: connnections to non Godot servers will not work, and [signal data_received] will not be emitted when this option is true.
-            &lt;param name="protocols"&gt;If the param is null, then the default value is new string[] {}&lt;/param&gt;
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketClient.DisconnectFromHost">
-            <summary>
-            Disconnect from the server if currently connected.
-            </summary>
-        </member>
-        <member name="T:Godot.WebSocketMultiplayerPeer">
-            <summary>
-            Base class for WebSocket server and client, allowing them to be used as network peer for the [MultiplayerAPI].
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketMultiplayerPeer.GetPeer(System.Int32)">
-            <summary>
-            Returns the [WebSocketPeer] associated to the given [code]peer_id[/code].
-            </summary>
-        </member>
-        <member name="T:Godot.WebSocketPeer">
-            <summary>
-            This class represent a specific WebSocket connection, you can do lower level operations with it.
-            You can choose to write to the socket in binary or text mode, and you can recognize the mode used for writing by the other peer.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketPeer.GetWriteMode">
-            <summary>
-            Get the current selected write mode. See [enum WriteMode].
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketPeer.SetWriteMode(Godot.WebSocketPeer.WriteMode)">
-            <summary>
-            Sets the socket to use the given [enum WriteMode].
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketPeer.IsConnectedToHost">
-            <summary>
-            Returns [code]true[/code] if this peer is currently connected.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketPeer.WasStringPacket">
-            <summary>
-            Returns [code]true[/code] if the last received packet was sent as a text payload. See [enum WriteMode]
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketPeer.Close">
-            <summary>
-            Close this WebSocket connection, actively disconnecting the peer.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketPeer.GetConnectedHost">
-            <summary>
-            Returns the IP Address of the connected peer. (Not available in HTML5 export)
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketPeer.GetConnectedPort">
-            <summary>
-            Returns the remote port of the connected peer. (Not available in HTML5 export)
-            </summary>
-        </member>
-        <member name="T:Godot.WebSocketServer">
-            <summary>
-            This class implements a WebSocket server that can also support the high level multiplayer API.
-            After starting the server ([method listen]), you will need to [method NetworkedMultiplayerPeer.poll] it at regular intervals (e.g. inside [method Node._process]). When clients connect, disconnect, or send data, you will receive the appropriate signal.
-            Note: This class will not work in HTML5 exports due to browser restrictions.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketServer.IsListening">
-            <summary>
-            Returns [code]true[/code] if the server is actively listening on a port.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketServer.Listen(System.Int32,System.String[],System.Boolean)">
-            <summary>
-            Start listening on the given port.
-            You can specify the desired subprotocols via the "protocols" array. If the list empty (default), "binary" will be used.
-            You can use this server as a network peer for [MultiplayerAPI] by passing true as "gd_mp_api". Note: [signal data_received] will not be fired and clients other than Godot will not work in this case.
-            &lt;param name="protocols"&gt;If the param is null, then the default value is new string[] {}&lt;/param&gt;
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketServer.Stop">
-            <summary>
-            Stop the server and clear its state.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketServer.HasPeer(System.Int32)">
-            <summary>
-            Returns [code]true[/code] if a peer with the given ID is connected.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketServer.GetPeerAddress(System.Int32)">
-            <summary>
-            Returns the IP address of the given peer.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketServer.GetPeerPort(System.Int32)">
-            <summary>
-            Returns the remote port of the given peer.
-            </summary>
-        </member>
-        <member name="M:Godot.WebSocketServer.DisconnectPeer(System.Int32)">
-            <summary>
-            Disconnects the given peer.
             </summary>
         </member>
         <member name="T:Godot.WindowDialog">

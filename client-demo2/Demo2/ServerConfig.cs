@@ -1,4 +1,4 @@
-﻿namespace Demo1
+﻿namespace Demo2
 {
     public struct ServerConfig
     {

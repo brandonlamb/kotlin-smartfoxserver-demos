@@ -5,7 +5,7 @@ using Sfs2X.Entities;
 using Sfs2X.Requests;
 using Sfs2X.Util;
 
-namespace Demo1
+namespace Demo2
 {
     public class SmartFoxServer : Node
     {
@@ -15,7 +15,7 @@ namespace Demo1
             Port = 9933,
             UserName = "user1",
             Password = "password1",
-            ZoneName = "Zone1",
+            ZoneName = "World",
             RoomName = "Room01"
         };
 
@@ -79,23 +79,18 @@ namespace Demo1
             _sfs.Send(new JoinRoomRequest(_config.RoomName));
         }
 
+        private void OnLoginError(BaseEvent evt)
+        {
+            var message = (string) evt.Params["errorMessage"];
+            GD.Print($"Login error; message={message}");
+            _sfs.Disconnect();
+        }
+
         private void OnLogout(BaseEvent evt)
         {
             var user = (User) evt.Params["user"];
             GD.Print($"Logged out of {_config.Host} as {user.Name}");
             _sfs.Disconnect();
-        }
-
-        private void OnLoginError(BaseEvent evt)
-        {
-            _sfs.Disconnect();
-
-            var user = (string) evt.Params["user"];
-            var message = (string) evt.Params["errorMessage"];
-            var code = (string) evt.Params["errorCode"];
-
-            GD.Print($"Unable to login to {_config.Host} as {user}");
-            GD.Print($"code={code}, message={message}");
         }
 
         private void OnRoomJoin(BaseEvent evt)
