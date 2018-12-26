@@ -1,0 +1,8 @@
+/Users/brandonlamb/Documents/src/personal/kotlin-smartfoxserver-demos/client-demo3/.mono/temp/bin/Debug/sfs2x-demo3.dll
+/Users/brandonlamb/Documents/src/personal/kotlin-smartfoxserver-demos/client-demo3/.mono/temp/bin/Debug/sfs2x-demo3.pdb
+/Users/brandonlamb/Documents/src/personal/kotlin-smartfoxserver-demos/client-demo3/.mono/temp/bin/Debug/SmartFox2X.dll
+/Users/brandonlamb/Documents/src/personal/kotlin-smartfoxserver-demos/client-demo3/.mono/temp/obj/Debug/sfs2x-demo3.csprojAssemblyReference.cache
+/Users/brandonlamb/Documents/src/personal/kotlin-smartfoxserver-demos/client-demo3/.mono/temp/obj/Debug/sfs2x-demo3.csproj.CoreCompileInputs.cache
+/Users/brandonlamb/Documents/src/personal/kotlin-smartfoxserver-demos/client-demo3/.mono/temp/obj/Debug/sfs2x-demo3.csproj.CopyComplete
+/Users/brandonlamb/Documents/src/personal/kotlin-smartfoxserver-demos/client-demo3/.mono/temp/obj/Debug/sfs2x-demo3.dll
+/Users/brandonlamb/Documents/src/personal/kotlin-smartfoxserver-demos/client-demo3/.mono/temp/obj/Debug/sfs2x-demo3.pdb

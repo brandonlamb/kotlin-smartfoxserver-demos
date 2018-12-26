@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p=".mono/temp/bin" t="ExcludeRecursive" />
+      <e p=".mono/temp/obj" t="ExcludeRecursive" />
+      <e p="Demo3" t="Include">
+        <e p="Player" t="Include">
+          <e p="PlayerController.cs" t="Include" />
+        </e>
+        <e p="ServerConfig.cs" t="Include" />
+        <e p="SmartFoxServer.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+      <e p="scenes" t="Include" />
+      <e p="sfs2x-demo3.csproj" t="IncludeRecursive" />
+      <e p="sfs2x-demo3.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_sfs2x-demo3.-900956559.00" t="ExcludeRecursive" />
+  </component>
+</project>

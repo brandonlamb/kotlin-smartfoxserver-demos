@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>demo1</artifactId>
+  <version>0.1</version>
+
+  <properties>
+    <exec.mainClass>com.example.Main</exec.mainClass>
+    <jdk.version>1.8</jdk.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
+    <maven.compiler.testTarget>${maven.compiler.target}</maven.compiler.testTarget>
+    <maven.compiler.testSource>${maven.compiler.source}</maven.compiler.testSource>
+    <maven.compiler.argument.target>${maven.compiler.target}</maven.compiler.argument.target>
+    <maven.compiler.argument.source>${maven.compiler.source}</maven.compiler.argument.source>
+    <maven.compiler.argument.testTarget>${maven.compiler.testTarget}</maven.compiler.argument.testTarget>
+    <maven.compiler.argument.testSource>${maven.compiler.testSource}</maven.compiler.argument.testSource>
+    <downloadSources>true</downloadSources>
+    <targetJdk>${maven.compiler.argument.target}</targetJdk>
+    <sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>
+
+    <!-- Framework and other dependency-->
+    <micronaut.version>1.0.2</micronaut.version>
+    <kotlin.version>1.3.11</kotlin.version>
+    <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
+    <maven-shade-plugin.version>3.2.1</maven-shade-plugin.version>
+    <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+    <reactor-core.version>3.2.3.RELEASE</reactor-core.version>
+    <tinylog.version>1.3.5</tinylog.version>
+    <!--<tinylog.version>2.0.0-M2.1</tinylog.version>-->
+    <mbassador.version>1.3.2</mbassador.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.micronaut</groupId>
+        <artifactId>micronaut-bom</artifactId>
+        <version>${micronaut.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-stdlib-jdk8</artifactId>
+      <version>${kotlin.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-reflect</artifactId>
+      <version>${kotlin.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jetbrains.kotlin</groupId>
+      <artifactId>kotlin-annotation-processing-maven</artifactId>
+      <version>${kotlin.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.jetbrains.kotlinx</groupId>
+      <artifactId>kotlinx-coroutines-core</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.micronaut</groupId>
+      <artifactId>micronaut-inject-java</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.micronaut</groupId>
+      <artifactId>micronaut-runtime</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.annotation</groupId>
+      <artifactId>javax.annotation-api</artifactId>
+      <version>1.3.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.projectreactor</groupId>
+      <artifactId>reactor-core</artifactId>
+      <version>${reactor-core.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>net.engio</groupId>
+      <artifactId>mbassador</artifactId>
+      <version>${mbassador.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+    </dependency>
+
+    <!--<dependency>-->
+      <!--<groupId>org.tinylog</groupId>-->
+      <!--<artifactId>tinylog-api</artifactId>-->
+      <!--<version>${tinylog.version}</version>-->
+    <!--</dependency>-->
+
+    <!--<dependency>-->
+      <!--<groupId>org.tinylog</groupId>-->
+      <!--<artifactId>tinylog-impl</artifactId>-->
+      <!--<version>${tinylog.version}</version>-->
+    <!--</dependency>-->
+
+    <dependency>
+      <groupId>org.tinylog</groupId>
+      <artifactId>tinylog</artifactId>
+      <version>${tinylog.version}</version>
+    </dependency>
+
+    <!--<dependency>-->
+      <!--<groupId>commons-codec</groupId>-->
+      <!--<artifactId>commons-codec</artifactId>-->
+      <!--<version>1.10</version>-->
+    <!--</dependency>-->
+
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.2.3</version>
+      <scope>runtime</scope>
+
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-log4j12</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>log4j</groupId>
+          <artifactId>log4j</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-kotlin</artifactId>
+      <version>2.9.4.1</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <artifactId>sfs2x</artifactId>
+      <groupId>com.smartfoxserver</groupId>
+      <version>2.13.4</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/sfs2x.jar</systemPath>
+      <type>jar</type>
+    </dependency>
+
+    <dependency>
+      <artifactId>sfs2x-core</artifactId>
+      <groupId>com.smartfoxserver</groupId>
+      <version>2.13.4</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/sfs2x-core.jar</systemPath>
+      <type>jar</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.dyn4j</groupId>
+      <artifactId>dyn4j</artifactId>
+      <version>3.3.0</version>
+      <!--<type>bundle</type>-->
+    </dependency>
+
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-actor_2.11</artifactId>
+      <version>2.5.19</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>DemoExtension</finalName>
+    <sourceDirectory>src/main/kotlin</sourceDirectory>
+    <testSourceDirectory>src/test/kotlin</testSourceDirectory>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>${maven-shade-plugin.version}</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>${exec.mainClass}</mainClass>
+                </transformer>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+              </transformers>
+
+              <!-- ignore bad signature error-->
+              <filters>
+                <filter>
+                  <artifact>ch.qos.logback:logback-classic</artifact>
+                  <excludes>
+                    <exclude>org/slf4j/**</exclude>
+                  </excludes>
+                </filter>
+                <filter>
+                  <artifact>com.microsoft.azure:*</artifact>
+                  <excludes>
+                    <exclude>META-INF/*.SF</exclude>
+                    <exclude>META-INF/*.DSA</exclude>
+                    <exclude>META-INF/*.RSA</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <configuration>
+          <executable>java</executable>
+          <arguments>
+            <argument>-noverify</argument>
+            <argument>-XX:TieredStopAtLevel=1</argument>
+            <argument>-classpath</argument>
+            <classpath/>
+            <argument>${exec.mainClass}</argument>
+          </arguments>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven-compiler-plugin.version}</version>
+
+        <configuration>
+          <proc>none</proc>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+
+        <executions>
+          <execution>
+            <id>default-compile</id>
+            <phase>none</phase>
+          </execution>
+          <execution>
+            <id>default-testCompile</id>
+            <phase>none</phase>
+          </execution>
+          <execution>
+            <id>java-compile</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>java-test-compile</id>
+            <phase>test-compile</phase>
+            <goals>
+              <goal>testCompile</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <artifactId>kotlin-maven-plugin</artifactId>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <version>${kotlin.version}</version>
+
+        <configuration>
+          <compilerPlugins>
+            <plugin>no-arg</plugin>
+            <plugin>all-open</plugin>
+          </compilerPlugins>
+
+          <pluginOptions>
+            <option>all-open:annotation=io.micronaut.aop.Around</option>
+            <option>no-arg:annotation=javax.inject.Singleton</option>
+            <option>no-arg:annotation=javax.ws.rs.ext.Provider</option>
+            <option>no-arg:annotation=org.junit.runner.RunWith</option>
+            <option>no-arg:annotation=com.smartfoxserver.v2.annotations.Instantiation</option>
+            <!-- Call instance initializers in the synthetic constructor -->
+            <!--<option>no-arg:invokeInitializers=true</option>-->
+            <option>all-open:annotation=javax.inject.Singleton</option>
+            <option>all-open:annotation=javax.ws.rs.ext.Provider</option>
+            <option>all-open:annotation=org.junit.runner.RunWith</option>
+            <option>all-open:annotation=com.smartfoxserver.v2.annotations.Instantiation</option>
+          </pluginOptions>
+        </configuration>
+
+        <executions>
+          <execution>
+            <id>kapt</id>
+            <goals>
+              <goal>kapt</goal>
+            </goals>
+            <configuration>
+              <sourceDirs>
+                <sourceDir>src/main/kotlin</sourceDir>
+              </sourceDirs>
+              <annotationProcessorPaths>
+                <annotationProcessorPath>
+                  <groupId>io.micronaut</groupId>
+                  <artifactId>micronaut-inject-java</artifactId>
+                  <version>${micronaut.version}</version>
+                </annotationProcessorPath>
+                <annotationProcessorPath>
+                  <groupId>io.micronaut</groupId>
+                  <artifactId>micronaut-validation</artifactId>
+                  <version>${micronaut.version}</version>
+                </annotationProcessorPath>
+              </annotationProcessorPaths>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>compile</id>
+            <goals>
+              <goal>compile</goal>
+            </goals>
+            <configuration>
+              <sourceDirs>
+                <sourceDir>src/main/kotlin</sourceDir>
+              </sourceDirs>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>test-kapt</id>
+            <goals>
+              <goal>test-kapt</goal>
+            </goals>
+            <configuration>
+              <sourceDirs>
+                <sourceDir>src/test/kotlin</sourceDir>
+              </sourceDirs>
+              <annotationProcessorPaths>
+                <annotationProcessorPath>
+                  <groupId>io.micronaut</groupId>
+                  <artifactId>micronaut-inject-java</artifactId>
+                  <version>${micronaut.version}</version>
+                </annotationProcessorPath>
+                <annotationProcessorPath>
+                  <groupId>io.micronaut</groupId>
+                  <artifactId>micronaut-validation</artifactId>
+                  <version>${micronaut.version}</version>
+                </annotationProcessorPath>
+              </annotationProcessorPaths>
+            </configuration>
+          </execution>
+
+          <execution>
+            <id>test-compile</id>
+            <goals>
+              <goal>test-compile</goal>
+            </goals>
+            <configuration>
+              <sourceDirs>
+                <sourceDir>src/test/kotlin</sourceDir>
+                <sourceDir>target/generated-sources/kapt/test</sourceDir>
+              </sourceDirs>
+            </configuration>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-maven-noarg</artifactId>
+            <version>${kotlin.version}</version>
+          </dependency>
+          <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-maven-allopen</artifactId>
+            <version>${kotlin.version}</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+</project>

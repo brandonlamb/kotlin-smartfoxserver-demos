@@ -46,10 +46,10 @@
       <HintPath>$(ProjectDir)\.mono\assemblies\GodotSharpEditor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="SmartFox2X, Version=1.7.6.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\..\..\Downloads\SFS2X_API_CSharp_v1.7.6\Release\DotNet\SmartFox2X.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="SmartFox2X">
+      <HintPath>..\..\..\..\..\Downloads\SFS2X_API_CSharp_v1.7.11\Release\SmartFox2X.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Demo1\ServerConfig.cs" />

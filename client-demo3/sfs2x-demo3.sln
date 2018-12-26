@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sfs2x-demo3", "sfs2x-demo3.csproj", "{18AB01EF-BFDA-4F1F-B491-A70B243B545A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	Release|Any CPU = Release|Any CPU
+	Tools|Any CPU = Tools|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18AB01EF-BFDA-4F1F-B491-A70B243B545A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AB01EF-BFDA-4F1F-B491-A70B243B545A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AB01EF-BFDA-4F1F-B491-A70B243B545A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AB01EF-BFDA-4F1F-B491-A70B243B545A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18AB01EF-BFDA-4F1F-B491-A70B243B545A}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
+		{18AB01EF-BFDA-4F1F-B491-A70B243B545A}.Tools|Any CPU.Build.0 = Tools|Any CPU
+	EndGlobalSection
+EndGlobal
