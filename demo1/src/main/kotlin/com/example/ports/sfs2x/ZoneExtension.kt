@@ -15,6 +15,8 @@ import com.example.domain.core.zone.UserJoinedZone
 import com.example.domain.core.zone.UserLeftRoom
 import com.example.domain.core.zone.UserLoggedOut
 import com.smartfoxserver.bitswarm.sessions.ISession
+import com.smartfoxserver.v2.annotations.Instantiation
+import com.smartfoxserver.v2.annotations.Instantiation.InstantiationMode.SINGLE_INSTANCE
 import com.smartfoxserver.v2.api.CreateRoomSettings
 import com.smartfoxserver.v2.core.SFSEventParam.LOGIN_NAME
 import com.smartfoxserver.v2.core.SFSEventParam.LOGIN_PASSWORD
@@ -41,7 +43,7 @@ import scala.concurrent.Await
 import scala.concurrent.duration.Duration
 import java.util.concurrent.TimeUnit
 
-//@Instantiation(SINGLE_INSTANCE)
+@Instantiation(SINGLE_INSTANCE)
 class ZoneExtension : BaseExtension() {
   private val auth: AuthService = ctx.getBean(AuthService::class.java)
   private lateinit var zoneActor: ActorRef

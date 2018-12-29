@@ -20,36 +20,28 @@ namespace Demo2
             RoomName = "room-1"
         };
 
-        private readonly SmartFox _sfs = new SmartFox();
+        private SmartFox _sfs;
 
         public override void _Ready()
         {
-//            var x = new Node2D();
-
-            _sfs.ThreadSafeMode = false;
-            _sfs.Debug = true;
-
-            _sfs.AddEventListener(SFSEvent.CONNECTION, OnConnection);
-            _sfs.AddEventListener(SFSEvent.CONNECTION_LOST, OnConnectionLost);
-            _sfs.AddEventListener(SFSEvent.LOGIN, OnLogin);
-            _sfs.AddEventListener(SFSEvent.LOGIN_ERROR, OnLoginError);
-            _sfs.AddEventListener(SFSEvent.ROOM_JOIN, OnRoomJoin);
-            _sfs.AddEventListener(SFSEvent.ROOM_JOIN_ERROR, OnRoomJoinError);
-            _sfs.AddEventListener(SFSEvent.LOGOUT, OnLogout);
-
             // Connect to connection popup signals for connect and disconnect
             var node = (Popup) GetTree().GetRoot().GetNode("game/CanvasLayer/Connection");
-            node.Connect("Connect", this, "OnConnect");
-            node.Connect("Disconnect", this, "OnDisconnect");
+            node.Connect("ConnectServer", this, "OnConnect");
+            node.Connect("DisconnectServer", this, "OnDisconnect");
         }
 
         public override void _Process(float delta)
         {
-            _sfs.ProcessEvents();
+            _sfs?.ProcessEvents();
         }
 
         public void OnConnect()
         {
+            if (_sfs != null)
+            {
+                return;
+            }
+
             var cfg = new ConfigData
             {
                 Host = _config.Host,
@@ -58,13 +50,23 @@ namespace Demo2
             };
 
             GD.Print("Connecting...");
+
+            _sfs = new SmartFox {ThreadSafeMode = false, Debug = true};
+            _sfs.AddEventListener(SFSEvent.CONNECTION, OnConnection);
+            _sfs.AddEventListener(SFSEvent.CONNECTION_LOST, OnConnectionLost);
+            _sfs.AddEventListener(SFSEvent.LOGIN, OnLogin);
+            _sfs.AddEventListener(SFSEvent.LOGIN_ERROR, OnLoginError);
+            _sfs.AddEventListener(SFSEvent.ROOM_JOIN, OnRoomJoin);
+            _sfs.AddEventListener(SFSEvent.ROOM_JOIN_ERROR, OnRoomJoinError);
+            _sfs.AddEventListener(SFSEvent.LOGOUT, OnLogout);
+
             _sfs.Connect(cfg);
         }
 
         public void OnDisconnect()
         {
 //            _sfs.Send(new LeaveRoomRequest());
-            _sfs.Send(new LogoutRequest());
+            _sfs?.Send(new LogoutRequest());
         }
 
         private void OnConnection(BaseEvent evt)
@@ -78,7 +80,7 @@ namespace Demo2
                 parameters.PutUtfString("password", _config.Password);
 
 //				_sfs.Send(new LoginRequest(_config.UserName, _config.Password, _config.ZoneName, parameters));
-                _sfs.Send(new LoginRequest(_config.UserName, _config.Password));
+                _sfs?.Send(new LoginRequest(_config.UserName, _config.Password));
             }
             else
             {
@@ -101,22 +103,21 @@ namespace Demo2
         {
             var user = (User) evt.Params[SFSEventParam.User];
             GD.Print($"Logged into {_config.Host} as {user.Name}");
-            _sfs.Send(new JoinRoomRequest(_config.RoomName));
+            _sfs?.Send(new JoinRoomRequest(_config.RoomName));
         }
 
         private void OnLoginError(BaseEvent evt)
         {
             var message = (string) evt.Params[SFSEventParam.ErrorMessage];
             GD.Print($"Login error; message={message}");
-            _sfs.Disconnect();
+            OnLogout(evt);
         }
 
         private void OnLogout(BaseEvent evt)
         {
-
-//            var user = (User) evt.Params[SFSEventParam.User];
             GD.Print($"Logged out of {_config.Host}");
-            _sfs.Disconnect();
+            _sfs?.Disconnect();
+            _sfs = null;
         }
 
         private void OnRoomJoin(BaseEvent evt)

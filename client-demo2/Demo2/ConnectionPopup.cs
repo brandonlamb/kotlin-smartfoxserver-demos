@@ -10,18 +10,18 @@ namespace Demo2
 
         public void OnConnect()
         {
-            EmitSignal(nameof(Connect));
+            EmitSignal(nameof(ConnectServer));
         }
 
         public void OnDisconnect()
         {
-            EmitSignal(nameof(Disconnect));
+            EmitSignal(nameof(DisconnectServer));
         }
 
         [Signal]
-        public delegate void Connect();
+        public delegate void ConnectServer();
 
         [Signal]
-        public delegate void Disconnect();
+        public delegate void DisconnectServer();
     }
 }

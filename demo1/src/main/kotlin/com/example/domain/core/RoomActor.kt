@@ -95,6 +95,10 @@ open class RoomActor(private val appConfig: AppConfig, private val room: RoomExt
     context.child("players").get().tell(cmd, self)
   }
 
+  private fun handle(cmd: CreateNpc) {
+    val npc = room.api.createNPC("npc-1", room.parentZone, false)
+  }
+
   private fun createPlayers() {
     context.actorOf(
       PlayersActor.props(appConfig, room).withDispatcher(appConfig.dispatchers.affinity),

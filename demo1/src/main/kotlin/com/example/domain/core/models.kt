@@ -12,11 +12,11 @@ data class Game(val name: String)
 
 // Commands
 sealed class Command
-
-class SayHello(val message: String) : Command()
-class RegisterRoomExtension(val extension: RoomExtension) : Command()
-
 object Tick : Command()
+
+data class SayHello(val message: String) : Command()
+data class RegisterRoomExtension(val extension: RoomExtension) : Command()
+data class CreateNpc(val name: String) : Command()
 
 // Events
 sealed class Event

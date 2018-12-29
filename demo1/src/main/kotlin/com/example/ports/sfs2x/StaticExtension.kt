@@ -1,5 +1,7 @@
 package com.example.ports.sfs2x
 
+import com.smartfoxserver.v2.annotations.Instantiation
+import com.smartfoxserver.v2.annotations.Instantiation.InstantiationMode.SINGLE_INSTANCE
 import com.smartfoxserver.v2.core.SFSEventType.SERVER_READY
 import com.smartfoxserver.v2.extensions.SFSExtension
 import org.pmw.tinylog.Logger
@@ -7,7 +9,7 @@ import org.pmw.tinylog.Logger
 /**
  * Represents a statically managed room, such as a named map
  */
-//@Instantiation(SINGLE_INSTANCE)
+@Instantiation(SINGLE_INSTANCE)
 class StaticExtension : RoomExtension() {
   override fun init() {
     super.init()
