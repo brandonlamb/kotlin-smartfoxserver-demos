@@ -14,6 +14,7 @@ import com.example.domain.core.player.Player
 import com.example.domain.core.player.api.PlayerReadRepository
 import com.example.infrastructure.config.AppConfig
 import com.example.ports.sfs2x.RoomExtension
+import com.smartfoxserver.v2.entities.Room
 import com.smartfoxserver.v2.entities.User
 import com.smartfoxserver.v2.mmo.MMORoom
 import com.smartfoxserver.v2.mmo.Vec3D
@@ -65,7 +66,7 @@ class PlayerActor(
   private fun handle(cmd: Tick) {
     Logger.info("tick=${context.parent.path()}/${self.path().name()}")
 
-    val mmoRoom = room.parentRoom as MMORoom
+    val mmoRoom = room.parentRoom as Room
     mmoRoom.userList.forEach { user ->
       Logger.info("user={}, position={}", user.name, user)
 //      user as User

@@ -12,6 +12,7 @@ import com.example.domain.core.player.RemovePlayer
 import com.example.domain.godot.SceneTree
 import com.example.infrastructure.config.AppConfig
 import com.example.ports.sfs2x.RoomExtension
+import com.smartfoxserver.v2.entities.User
 import com.smartfoxserver.v2.mmo.IMMOItemVariable
 import com.smartfoxserver.v2.mmo.MMOItem
 import com.smartfoxserver.v2.mmo.MMOItemVariable
@@ -27,6 +28,7 @@ open class RoomActor(private val appConfig: AppConfig, private val room: RoomExt
     if (room.parentRoom.containsVariable(ROOM_ID)) room.parentRoom.getVariable(ROOM_ID).stringValue else this::class.java.simpleName
   }
   private var tick = 1
+  private val npcs = mutableMapOf<Int, User>()
 
   init {
     Logger.info("Creating ${context.parent.path()}/${self.path().name()}")
@@ -37,6 +39,7 @@ open class RoomActor(private val appConfig: AppConfig, private val room: RoomExt
     super.preStart()
 
     createPlayers()
+    createItems()
   }
 
   override fun supervisorStrategy(): SupervisorStrategy = OneForOneStrategy(
@@ -72,11 +75,11 @@ open class RoomActor(private val appConfig: AppConfig, private val room: RoomExt
         val allItems = (room.parentRoom as MMORoom).allMMOItems
 //        allItems.forEach { Logger.info("item={}/{}", room.roomId(), it.variables.first { it.name == "id" }.value) }
 
-        if (allItems.size < 5) {
-          val vars = mutableListOf<IMMOItemVariable>()
-          vars.add(MMOItemVariable("id", "item-$tick"))
-          room.mmoApi.setMMOItemPosition(MMOItem(vars), Vec3D(1, 1, 0), room.parentRoom as MMORoom)
-        }
+//        if (allItems.size < 20) {
+//          val vars = mutableListOf<IMMOItemVariable>()
+//          vars.add(MMOItemVariable("id", "item-$tick"))
+//          room.mmoApi.setMMOItemPosition(MMOItem(vars), Vec3D(1, 1, 0), room.parentRoom as MMORoom)
+//        }
       }
     }
 
@@ -104,6 +107,30 @@ open class RoomActor(private val appConfig: AppConfig, private val room: RoomExt
       PlayersActor.props(appConfig, room).withDispatcher(appConfig.dispatchers.affinity),
       PLAYERS
     )
+  }
+
+  private fun createItems() {
+    when (room.parentRoom) {
+      is MMORoom -> {
+        for (i in 1..100) {
+          val vars = mutableListOf<IMMOItemVariable>()
+          vars.add(MMOItemVariable("id", "item-$i"))
+          vars.add(MMOItemVariable("n", "Item Description $i"))
+          room.mmoApi.setMMOItemPosition(MMOItem(vars), Vec3D(i, i, 0), room.parentRoom as MMORoom)
+        }
+      }
+    }
+  }
+
+  private fun createNpcs() {
+    when (room.parentRoom) {
+      is MMORoom -> {
+        for (i in 1..100) {
+          val npc = room.api.createNPC("npc-$i", room.parentZone, false)
+          npcs[i] = npc
+        }
+      }
+    }
   }
 
   companion object {

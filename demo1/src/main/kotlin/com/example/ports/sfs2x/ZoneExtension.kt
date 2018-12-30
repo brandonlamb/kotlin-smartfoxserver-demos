@@ -147,7 +147,7 @@ class ZoneExtension : BaseExtension() {
       roomVariables = listOf(SFSRoomVariable("roomId", "lobby", true, false, false))
     })
 
-    for (i in 1..2) {
+    for (i in 1..100) {
       parentZone.createRoom(CreateMMORoomSettings().apply {
         name = "room-$i"
         defaultAOI = Vec3D(200, 200, 0)
