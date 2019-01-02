@@ -16,13 +16,15 @@ _global_script_class_icons={
 [application]
 
 config/name="Client Demo Full"
-run/main_scene="res://Scenes/Login.tscn"
+run/main_scene="res://Screens/Login/Login.tscn"
 boot_splash/fullsize=false
 config/icon="res://icon.png"
 
 [autoload]
 
-SmartFoxServer="*res://GameClient/SmartFoxServer.cs"
+AuthServer="*res://GameClient/SmartFoxServer.cs"
+RealmServer="*res://GameClient/SmartFoxServer.cs"
+WorldServer="*res://GameClient/SmartFoxServer.cs"
 
 [display]
 

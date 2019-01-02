@@ -1,0 +1,48 @@
+---
+micronaut:
+  application:
+    name: AuthExtension
+#  http:
+#    client:
+#      read-timeout: 30s
+#      pool:
+#        enabled: true
+#        max-connections: 100
+  server:
+    port: ${MN_HTTP_PORT:8081}
+
+---
+jackson:
+  deserializaton:
+    failOnUnknownProperties: false
+  serialization:
+    inclusion: always
+
+---
+app:
+  akka:
+    dispatchers:
+      affinity: akka-dispatcher-affinity
+      default: akka-dispatcher
+      fork-join: akka-dispatcher-fjp
+      pinned: akka-dispatcher-pinned
+
+  api:
+    max-connections: 100
+    api-key: ${API_KEY:abc-123}
+
+  game:
+    name: Multiplayer Online Game
+    # 40
+    tick: "10000"
+
+---
+sfs2x:
+  request-types:
+    player: P
+    item: I
+    trade: T
+
+  player:
+    move: M
+    attack: A

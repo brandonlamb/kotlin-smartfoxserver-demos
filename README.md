@@ -11,3 +11,7 @@
 
 The server will create `lobby`, `room-1` and `room-2` rooms.
 
+## Architecture
+
+![Architecture Design Flow](architecturedesignflow.png)
+![Architecture Design](architecturedesign.png)
