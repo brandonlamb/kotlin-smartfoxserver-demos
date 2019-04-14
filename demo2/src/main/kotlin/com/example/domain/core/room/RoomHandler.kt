@@ -1,4 +1,4 @@
-package com.example.application
+package com.example.domain.core.room
 
 import com.example.domain.core.AddPlayer
 import com.example.ports.sfs2x.RoomExtension

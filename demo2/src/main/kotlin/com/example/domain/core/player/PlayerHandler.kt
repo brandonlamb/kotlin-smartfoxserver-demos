@@ -1,4 +1,4 @@
-package com.example.application
+package com.example.domain.core.player
 
 import com.example.domain.core.MovePlayer
 import com.example.domain.core.PlayerMoved

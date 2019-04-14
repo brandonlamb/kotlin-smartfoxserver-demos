@@ -1,4 +1,4 @@
-package com.example.application
+package com.example.domain.core.trade
 
 import akka.actor.ActorRef
 import akka.actor.ActorRef.noSender
