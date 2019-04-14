@@ -200,17 +200,23 @@
       </plugin>
     </plugins>
   </build>
+  <repositories>
+    <repository>
+      <id>jcenter.bintray.com</id>
+      <url>https://jcenter.bintray.com</url>
+    </repository>
+  </repositories>
   <dependencies>
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-annotation-processing-maven</artifactId>
-      <version>1.3.11</version>
+      <version>1.3.30</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>io.micronaut</groupId>
       <artifactId>micronaut-inject-java</artifactId>
-      <version>1.0.2</version>
+      <version>1.1.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -240,9 +246,9 @@
     </dependencies>
   </dependencyManagement>
   <properties>
-    <micronaut.version>1.0.2</micronaut.version>
-    <tinylog.version>1.3.5</tinylog.version>
-    <kotlin.version>1.3.11</kotlin.version>
+    <micronaut.version>1.1.0</micronaut.version>
+    <tinylog.version>1.3.6</tinylog.version>
+    <kotlin.version>1.3.30</kotlin.version>
     <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
     <exec.mainClass>com.example.Main</exec.mainClass>
     <maven.compiler.testTarget>${maven.compiler.target}</maven.compiler.testTarget>
@@ -259,7 +265,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <maven.compiler.argument.target>${maven.compiler.target}</maven.compiler.argument.target>
     <mbassador.version>1.3.2</mbassador.version>
-    <reactor-core.version>3.2.3.RELEASE</reactor-core.version>
+    <reactor-core.version>3.2.8.RELEASE</reactor-core.version>
     <maven.compiler.testSource>${maven.compiler.source}</maven.compiler.testSource>
     <jdk.version>1.8</jdk.version>
     <sourceReleaseAssemblyDescriptor>source-release</sourceReleaseAssemblyDescriptor>
