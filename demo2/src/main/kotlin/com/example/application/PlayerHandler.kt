@@ -1,5 +1,7 @@
 package com.example.application
 
+import com.example.domain.core.MovePlayer
+import com.example.domain.core.PlayerMoved
 import com.example.domain.godot.SceneTree
 import com.example.ports.sfs2x.RoomExtension
 import net.engio.mbassy.listener.Handler

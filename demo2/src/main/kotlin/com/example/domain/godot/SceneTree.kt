@@ -6,7 +6,7 @@ import org.dyn4j.dynamics.World
 open class SceneTree(
   private val room: RoomExtension,
   private val eventBus: (Any) -> Unit,
-  val root: ViewPort = ViewPort(World())
+  val root: ViewPort = ViewPort("viewport", World())
 ) : MainLoop() {
   private var paused = false
 
@@ -31,5 +31,10 @@ open class SceneTree(
     return count
   }
 
-  fun emit(message: Any): Unit = eventBus.invoke(message)
+  /**
+   * Emit a message (which could be a command, event, other), and delegate to a message bus
+   */
+  fun emit(message: Any) {
+    eventBus.invoke(message)
+  }
 }

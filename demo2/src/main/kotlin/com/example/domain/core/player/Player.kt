@@ -2,9 +2,9 @@ package com.example.domain.core.player
 
 import com.example.domain.core.MovePlayer
 import com.example.domain.godot.Node2D
-import com.example.domain.godot.NodeID
+import com.example.domain.godot.NodeId
 
-open class Player(id: NodeID, playerId: PlayerId) : Node2D(id) {
+open class Player(id: NodeId, playerId: PlayerId) : Node2D(id) {
   private val state = State()
 
   override fun process(delta: Float) {

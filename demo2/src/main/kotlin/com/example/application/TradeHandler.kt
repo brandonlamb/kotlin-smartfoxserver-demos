@@ -2,6 +2,8 @@ package com.example.application
 
 import akka.actor.ActorRef
 import akka.actor.ActorRef.noSender
+import com.example.domain.core.ItemTraded
+import com.example.domain.core.TradeItem
 import net.engio.mbassy.listener.Handler
 import net.engio.mbassy.listener.Listener
 

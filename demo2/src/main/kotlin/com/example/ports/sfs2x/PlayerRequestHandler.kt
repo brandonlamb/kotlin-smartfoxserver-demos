@@ -11,9 +11,15 @@ import org.dyn4j.geometry.Vector2
 
 class PlayerRequestHandler(private val roomActor: ActorRef) : BaseClientRequestHandler() {
   override fun handleClientRequest(user: User, params: ISFSObject) {
-    when (params.getInt(SFSExtension.MULTIHANDLER_REQUEST_ID)) {
+    when (params.getShort(SFSExtension.MULTIHANDLER_REQUEST_ID)) {
       PlayerRequestMappings.ATTACK -> roomActor.tell(MovePlayer(user.id, Vector2()), noSender())
       PlayerRequestMappings.MOVE -> roomActor.tell(MovePlayer(user.id, Vector2()), noSender())
+      PlayerRequestMappings.CAST_SKILL -> roomActor.tell(MovePlayer(user.id, Vector2()), noSender())
+    }
+
+    when (params.getShort(SFSExtension.MULTIHANDLER_REQUEST_ID)) {
+      PlayerMappings.ATTACK.value -> roomActor.tell(MovePlayer(user.id, Vector2()), noSender())
+      PlayerMappings.MOVE.value -> { val x = PlayerMappings.MOVE }
     }
   }
 }

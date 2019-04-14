@@ -1,3 +1,3 @@
 package com.example.domain.godot
 
-typealias NodeID = String
+typealias NodeId = String

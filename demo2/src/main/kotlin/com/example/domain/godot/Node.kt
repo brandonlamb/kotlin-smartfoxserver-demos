@@ -1,8 +1,6 @@
 package com.example.domain.godot
 
-import net.engio.mbassy.bus.IMessagePublication
-
-open class Node(val id: NodeID) : Object() {
+open class Node(val id: NodeId) : Object() {
   var parent: Node? = null
 
   private var tree: SceneTree? = null
@@ -61,5 +59,10 @@ open class Node(val id: NodeID) : Object() {
     ready()
   }
 
-  fun emit(message: Any): IMessagePublication? = tree?.emit(message)
+  /**
+   * Emit a message (which could be a command, event, other), and delegate to SceneTree
+   */
+  fun emit(message: Any) {
+    tree?.emit(message)
+  }
 }
