@@ -89,15 +89,15 @@ class ZoneExtension : BaseExtension() {
   private fun createRooms() {
     Logger.debug("THREAD={}", Thread.currentThread().name)
 
-    parentZone.createRoom(CreateRoomSettings().apply {
-      name = "lobby"
-      isGame = false
-      isDynamic = true
-      autoRemoveMode = SFSRoomRemoveMode.NEVER_REMOVE
-      setAllowOwnerOnlyInvitation(true)
-      extension = CreateRoomSettings.RoomExtensionSettings("__lib__", "com.example.ports.sfs2x.StaticExtension")
-      roomVariables = listOf(SFSRoomVariable("roomId", "lobby", true, false, false))
-    })
+//    parentZone.createRoom(CreateRoomSettings().apply {
+//      name = "lobby"
+//      isGame = false
+//      isDynamic = true
+//      autoRemoveMode = SFSRoomRemoveMode.NEVER_REMOVE
+//      setAllowOwnerOnlyInvitation(true)
+//      extension = CreateRoomSettings.RoomExtensionSettings("__lib__", "com.example.ports.sfs2x.StaticExtension")
+//      roomVariables = listOf(SFSRoomVariable("roomId", "lobby", true, false, false))
+//    })
 
     val i = 1
     parentZone.createRoom(CreateMMORoomSettings().apply {
@@ -108,7 +108,7 @@ class ZoneExtension : BaseExtension() {
       autoRemoveMode = SFSRoomRemoveMode.NEVER_REMOVE
       isSendAOIEntryPoint = true
       setAllowOwnerOnlyInvitation(true)
-      extension = CreateRoomSettings.RoomExtensionSettings("__lib__", "com.example.ports.sfs2x.StaticExtension")
+      extension = CreateRoomSettings.RoomExtensionSettings("__lib__", "com.example.ports.sfs2x.RoomExtension")
       roomVariables = listOf(SFSRoomVariable("roomId", "room-$i", true, false, false))
     })
   }

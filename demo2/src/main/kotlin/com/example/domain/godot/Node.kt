@@ -1,18 +1,20 @@
 package com.example.domain.godot
 
+import net.engio.mbassy.bus.IMessagePublication
+
 open class Node(val id: NodeID) : Object() {
   var parent: Node? = null
 
   private var tree: SceneTree? = null
   private val children: MutableMap<String, Node> = mutableMapOf()
 
-  fun physicsProcess(delta: Float) {
+  open fun physicsProcess(delta: Float) {
   }
 
-  fun process(delta: Float) {
+  open fun process(delta: Float) {
   }
 
-  fun ready() {
+  open fun ready() {
   }
 
   fun addChild(node: Node) {
@@ -40,10 +42,24 @@ open class Node(val id: NodeID) : Object() {
     children.values.forEach { it.setTree(tree) }
   }
 
-  fun getNode(name: String): Node = children[name] ?: throw Exception("Node does not exist")
+  fun getNode(name: String): Node {
+    val paths = name.split("/").map { it.trim() }
+
+    var currentNode = this
+
+    for (i in paths) {
+      currentNode = currentNode.children[name] ?: throw Exception("Node '$name' does not exist")
+    }
+
+    return currentNode
+
+//    return children[name] ?: throw Exception("Node '$name' does not exist")
+  }
 
   fun propagateReady() {
     children.values.forEach { it.propagateReady() }
     ready()
   }
+
+  fun emit(message: Any): IMessagePublication? = tree?.emit(message)
 }

@@ -1,21 +1,20 @@
 package com.example.application
 
-import akka.actor.ActorRef
-import akka.actor.ActorRef.noSender
-import com.example.domain.core.player.MovePlayer
-import com.example.domain.core.player.PlayerMoved
+import com.example.domain.godot.SceneTree
+import com.example.ports.sfs2x.RoomExtension
 import net.engio.mbassy.listener.Handler
 import net.engio.mbassy.listener.Listener
 
 @Listener
-class PlayerHandler(private val room: ActorRef) {
+class PlayerHandler(private val tree: SceneTree, private val room: RoomExtension) {
   @Handler
   fun handle(cmd: MovePlayer) {
-    room.tell(cmd, noSender())
+    val player = tree.root.getNode("players/${cmd.id}")
+    val user = room.parentZone.userManager.getUserById(cmd.id)
   }
 
   @Handler
-  fun handle(evt: PlayerMoved) {
-    room.tell(evt, noSender())
+  fun handle(event: PlayerMoved) {
+
   }
 }
